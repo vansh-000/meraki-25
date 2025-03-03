@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 import Image from "next/image";
 import TeamsPage from "./_components/Teams_page";
 
+=======
+>>>>>>> upstream/master
 export default function Home() {
   return (
     <>

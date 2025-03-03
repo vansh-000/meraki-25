@@ -27,6 +27,34 @@ yarn
 yarn dev
 ```
 
+## Folder Structure
+
+``` sh
+/meraki
+│── public/              # Static assets (images, icons, etc.)
+│── app/                 # App Router (Server Components)
+│   ├── layout.tsx       # Root layout component
+│   ├── page.tsx         # Home page component
+│   ├── (auth)/          # Authentication-related routes (e.g., login, signup)
+│   ├── (dashboard)/     # Protected dashboard pages
+│   ├── api/             # API routes (server actions)
+│   ├── favicon.ico      # App favicon
+│   └── globals.css      # Global styles
+│── components/          # Reusable UI components
+│── lib/                 # Utilities, helpers, and configurations
+│── styles/              # Custom styles and Tailwind configurations
+│── hooks/               # Custom React hooks
+│── context/             # Global state management (if used)
+│── constants/           # Static data and configurations
+│── types/               # TypeScript type definitions
+│── .env.local           # Environment variables (not committed)
+│── .gitignore           # Git ignore file
+│── next.config.js       # Next.js configuration
+│── package.json         # Dependencies and scripts
+│── tsconfig.json        # TypeScript configuration
+│── README.md            # Project documentation
+```
+
 ## Scripts
 
 ```sh

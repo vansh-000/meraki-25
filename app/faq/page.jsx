@@ -13,7 +13,7 @@ function Accordion() {
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen p-4 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/backgrounds/mindstone.png')" }}
+      style={{ backgroundImage: "url('/images/backgrounds/faq.jpeg')" }}
     >
       <div className="w-full max-w-2xl bg-white/10 backdrop-blur-md p-6 rounded-xl shadow-lg border border-white/20">
         {data.length > 0 ? (

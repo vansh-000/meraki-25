@@ -1,9 +1,9 @@
-export default function Contact() {
-    return (
-        <>
-            <div className="w-screen inline-flex text-4xl h-screen items-center justify-center">
-            Contact Page
-            </div>
-        </>
-    );
+import Card from "@/components/Card";
+
+export default function About() {
+  return (
+    <div className="h-screen bg-[url('/images/backgrounds/contact.jpeg')] bg-cover bg-right w-screen flex">
+      <Card />
+    </div>
+  );
 }

@@ -30,4 +30,11 @@ body {
   clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
 }
 
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hidden {
+  scrollbar-width: none;
+}
 

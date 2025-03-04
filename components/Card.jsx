@@ -1,11 +1,12 @@
 const Card = () => {
   return (
-    <div className="relative h-full w-full flex">
-      <div className="md:w-8/15 w-full h-full backdrop-blur-md bg-black/20 md:bg-black/70 md:backdrop-blur-lg absolute left-0 top-0"></div>
-      <div className="absolute bottom-0 left-8/15 h-full flex">
-        <div className="hidden md:block w-[90px] h-[200px] bg-black/70 backdrop-blur-lg absolute top-0 clip-slant-right rounded-r-lg border-[#6A6D73]/40"></div>
-        <div className="hidden md:block w-[90px] h-[200px] bg-black/70 backdrop-blur-lg absolute bottom-0 clip-slant-top rounded-r-lg border-[#6A6D73]/40"></div>
-      </div>
+    <div
+      className="absolute hidden md:block inset-0 z-50 bg-black/60 backdrop-blur-xl xl:w-[900px] lg:w-[750px] md:w-[600px] h-full"
+      style={{
+        clipPath:
+          "polygon(86% 0, 100% 0, 100% 16%, 86% 26%, 86% 74%, 100% 84%, 100% 100%, 86% 100%, 0 100%, 0 0)",
+      }}
+    >
     </div>
   );
 };

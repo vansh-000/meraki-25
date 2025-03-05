@@ -1,4 +1,4 @@
-export default function HomeSponsors() {
+export default function HomeContact() {
     return (
       <div
         className="relative flex items-center justify-center w-screen min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-8 md:px-16 lg:px-24 md:bg-contain"

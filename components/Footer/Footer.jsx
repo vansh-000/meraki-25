@@ -7,7 +7,7 @@ import linkedIn from '@/public/logos/linkedIn.png';
 const Footer = () => {
   return (
     <>
-      <div className="absolute bottom-0 left-0 right-0 z-50 hidden md:block w-full">
+      <div className="relative bottom-0 left-0 right-0 z-50 mt-[-70px] hidden md:block w-full">
         <div
           className={`bg-black w-full h-40 flex flex-col md:flex-row justify-between px-6 py-4 ${iceland.className}`}
           style={{
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={`md:hidden absolute bottom-0 ${iceland.className} left-0 right-0 bg-black w-full h-30 flex flex-col justify-center items-center px-6 py-4 z-50`}>
+      <div className={`md:hidden relatuve mt-[-60px] bottom-0 ${iceland.className} left-0 right-0 bg-black w-full h-30 flex flex-col justify-center items-center px-6 py-4 z-50`}>
         <h2 className="text-2xl tracking-wide text-white">MERAKI - AY'25</h2>
         <h2 className="text-2xl tracking-wide text-white">IIIT UNA</h2>
         <div className="flex gap-4 mt-2">

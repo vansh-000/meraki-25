@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="w-screen bg-white h-screen">
-        <LandingScreen/>
+        <LandingScreen />
       </div>
     </>
   );

@@ -1,6 +1,13 @@
 import Card from "@/components/Card";
 import { ContactForm } from "@/components/ContactForm";
 
+<<<<<<< HEAD
+export default function About() {
+  return (   
+    <div className="flex h-screen md:bg-[url('/images/backgrounds/contact.jpeg')] bg-[url('/images/backgrounds/contact.jpg')] bg-cover bg-top md:bg-center w-screen">
+     
+      <Card />      
+=======
 export default function Contact() {
   return (
     <div className="flex h-screen md:bg-[url('/images/backgrounds/contact.jpeg')] bg-[url('/images/backgrounds/contact.jpg')] bg-cover bg-top md:bg-center w-screen">
@@ -11,6 +18,7 @@ export default function Contact() {
             <ContactForm/>
         </div>
       </div>
+>>>>>>> 067d0b847cda61a9581e784fac34217ea6bb77a9
     </div>
   );
 }

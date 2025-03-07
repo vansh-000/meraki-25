@@ -278,8 +278,13 @@ import EventCard from "./EventCard";
 
 export default function HomeSlider() {
   return (
-    <div className="w-full flex justify-center items-center min-h-screen p-6 md:p-12 bg-black">
-      <Swiper
+    <div
+    className="relative flex items-center justify-center w-screen h-screen overflow-hidden bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-8 md:px-16 lg:px-24 md:bg-contain"
+    style={{
+      backgroundImage: "url('/images/backgrounds/Slider_Home.jpeg')",
+    }}
+  >
+  <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
         effect="coverflow"
         spaceBetween={40}
@@ -320,7 +325,7 @@ export default function HomeSlider() {
             eventNumber={2}
             title="Blockchain Development"
             text="Event details here."
-            image="/images/backgrounds/event2.jpeg"
+            image="/images/backgrounds/blockChain_card.jpeg"
           />
         </SwiperSlide>
         <SwiperSlide>

@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import LeftImageSection from "./LeftImageSection";
 import RightImageSection from "./RightImageSection";
 import { MarqueeDemoVertical } from "./Marquee";
@@ -30,40 +29,35 @@ export default function ScrollableGallery() {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center text-white relative overflow-hidden">
-      {/* Four Sections Grid with Spacing */}
-      <div className="grid grid-cols-[10%_1fr_1fr_10%] w-full h-full items-center">
+    <div className="h-screen flex items-center justify-center text-white relative overflow-hidden bg-black">
+      {/* Four Sections Grid with Ratio 10% - 30% - 50% - 10% */}
+      <div className="grid grid-cols-[10%_40%_40%_10%] w-full h-full items-center">
         {/* Left Marquee */}
-        <div className="h-full flex items-center justify-center">
+        <div className="h-full flex items-center justify-center lg:ml-2.5 ml-2.5">
           <MarqueeDemoVertical names={data} currentIndex={currentIndex} />
         </div>
 
-        {/* Left Image Section with Margin */}
-        <div className="flex w-full h-full overflow-hidden items-center justify-center">
-          <div className="mr-6"> {/* Added margin for spacing */}
-            <LeftImageSection data={data[currentIndex]} />
-          </div>
+        {/* Left Image Section */}
+        <div className="flex w-full h-full overflow-hidden items-center justify-center lg:ml-6 sm:ml-1 md:ml-1.5">
+          <LeftImageSection data={data[currentIndex]} />
         </div>
 
-        {/* Right Image Section with Margin */}
+        {/* Right Image Section */}
         <div className="flex w-full h-full overflow-hidden items-center justify-center">
-          <div className="ml-1"> {/* Added margin for spacing */}
-            <RightImageSection
-              data={data[currentIndex]}
-              currentIndex={currentIndex}
-              setCurrentIndex={setCurrentIndex}
-            />
-          </div>
+          <RightImageSection
+            data={data[currentIndex]}
+            currentIndex={currentIndex}
+            setCurrentIndex={setCurrentIndex}
+          />
         </div>
 
-        {/* Right Marquee */}
-        <div className="h-full flex items-center justify-center">
+        {/* Right Marquee with slight left margin */}
+        <div className="h-full flex items-center justify-center  lg:ml-12 mr-1.5">
           <MarqueeDemoVertical names={data} currentIndex={currentIndex} />
         </div>
       </div>
 
-      {/* Navigation Buttons */}
-      
+     
     </div>
   );
 }

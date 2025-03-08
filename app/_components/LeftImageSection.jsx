@@ -15,7 +15,8 @@ export default function LeftImageSection({ data }) {
           key={data.img}
           src={data.img}
           alt={data.name}
-          className="w-48 h-48 sm:w-64 sm:h-64 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] 2xl:w-[700px] 2xl:h-[700px] object-cover border-4 border-white shadow-lg "
+          className="w-48 h-40 sm:w-64 sm:h-56 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] 2xl:w-[700px] 2xl:h-[700px] object-cover border-4 border-white shadow-lg 
+                     rounded-[30%] sm:rounded-xl"  
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}

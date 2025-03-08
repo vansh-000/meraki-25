@@ -6,7 +6,7 @@ export function MarqueeDemoVertical({ names }) {
     <div className="relative w-full h-screen z-50">
       {/* ✅ Large Screens - Vertical Marquee */}
       <div className="hidden md:flex h-full w-[50px] md:w-[65px] flex-row items-center justify-center overflow-hidden ml-2">
-        <Marquee pauseOnHover vertical className="[--duration:20s] border-l border-r border-white">
+        <Marquee pauseOnHover vertical className="[--duration:20s] border-l border-r  border-white">
           {names.map((item, index) => (
             <div
               key={index}
@@ -23,28 +23,14 @@ export function MarqueeDemoVertical({ names }) {
         </Marquee>
       </div>
 
-      {/* ✅ Small & Medium Screens - Horizontal Marquee at Top & Bottom */}
-      <div className="block md:hidden w-full absolute top-0 left-0  z-50">
-        <Marquee pauseOnHover className="[--duration:15s] border-t border-white ">
-          {names.map((item, index) => (
-            <div
-              key={index}
-              className="text-lg font-light text-white px-4 py-2 flex items-center whitespace-nowrap"
-            >
-              <span className="text-gray-400 mx-2">|</span>
-              <span>{item.name}</span>
-              <span className="text-gray-400 mx-2">|</span>
-            </div>
-          ))}
-        </Marquee>
-      </div>
+    
 
-      <div className="block md:hidden w-full absolute bottom-0 left-0  z-50">
-        <Marquee pauseOnHover reverse className="[--duration:15s] border-b border-white ">
+      <div className="block md:hidden w-full absolute bottom-0 left-0  z-50 ">
+        <Marquee pauseOnHover reverse className="[--duration:15s]   border-white border">
           {names.map((item, index) => (
             <div
               key={index}
-              className="text-lg font-light text-white px-4 py-2 flex items-center whitespace-nowrap -rotate-90 my-16 md:-rotate-90 sm:-rotate-90"
+              className="text-lg font-light text-white   flex items-center whitespace-nowrap -rotate-90 my-16 md:-rotate-90 sm:-rotate-90"
             >
               <span className="text-gray-400 mx-2">|</span>
               <span>{item.name}</span>

@@ -7,7 +7,7 @@ import LandingScreen from "@/components/LandingScreen";
 export default function Home() {
   return (
     <div
-      className="overflow-x-hidden h-screen snap-y snap-mandatory overflow-y-auto"
+      className=" snap-y snap-mandatory overflow-y-auto"
       style={{
         scrollbarWidth: "none", // For Firefox
         msOverflowStyle: "none", // For IE/Edge
@@ -20,19 +20,19 @@ export default function Home() {
         }
       `}</style>
 
-      <div className="w-full h-screen bg-white snap-start">
+      <div className="h-screen bg-white snap-start">
         <LandingScreen />
       </div>
 
-      <div className="w-full h-screen snap-start">
+      <div className="h-screen snap-start">
         <HomeSlider />
       </div>
       
-      <div className="w-full h-screen snap-start">
+      <div className="h-screen snap-start">
         <HomeSponsors />
       </div>
 
-      <div className="w-full h-screen snap-start">
+      <div className=" h-screen snap-start">
         <HomeContact />
       </div>
 

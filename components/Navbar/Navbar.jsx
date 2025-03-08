@@ -22,7 +22,6 @@ const Navbar = () => {
 
     return (
         <div>
-            {/* Container for Navbar and Title */}
             <div className="absolute z-50 w-[90%] left-1/2 -translate-x-1/2 mt-3 sm:mt-8 flex flex-col items-center">
                 <div
                     className="w-full h-[70px] bg-white/6 backdrop-blur-lg border border-white/10 shadow-lg flex items-center justify-between px-6 relative"

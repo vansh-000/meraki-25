@@ -29,7 +29,7 @@ export default function ScrollableGallery() {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center text-white relative overflow-hidden bg-black">
+    <div className="h-screen flex items-center justify-center text-white relative overflow-hidden ">
       {/* Four Sections Grid with Ratio 10% - 30% - 50% - 10% */}
       <div className="grid grid-cols-[10%_45%_35%_10%] w-full h-full items-center">
         {/* Left Marquee */}
@@ -52,7 +52,7 @@ export default function ScrollableGallery() {
         </div>
 
         {/* Right Marquee with slight left margin */}
-        <div className="h-full flex items-center justify-center  lg:ml-12 mr-1.5">
+        <div className="h-full flex items-center justify-center  lg:ml-12 mr-2">
           <MarqueeDemoVertical names={data} currentIndex={currentIndex} />
         </div>
       </div>

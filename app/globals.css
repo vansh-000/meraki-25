@@ -1,59 +1,43 @@
 @import "tailwindcss";
 
-/* Animate plugin should be enabled in tailwind.config.js */
-@layer base {
-  :root {
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --radius: 0.625rem;
-  }
-
-  .dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.145 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.985 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --border: oklch(0.269 0 0);
-    --input: oklch(0.269 0 0);
-  }
-
+/* Theme Variables */
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
+/* Light & Dark Mode Colors */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global Styles */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+/* Clip Path Styles */
+.clip-slant-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
+}
+
+.clip-slant-top {
+  clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
+}
+
+/* Utility Classes */
 @layer utilities {
-  .clip-trapezoid {
-    clip-path: polygon(80% 0, 100% 0, 100% 100%, 50% 100%);
-  }
-
-  .clip-slant-right {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
-  }
-
-  .clip-slant-top {
-    clip-path: polygon(0% 0%, 100% 40%, 100% 100%, 0% 100%);
-  }
-
   .scroll-hidden::-webkit-scrollbar {
     display: none;
   }
@@ -63,7 +47,7 @@
   }
 }
 
-/* Marquee animation */
+/* Marquee Animation */
 @keyframes marquee-vertical {
   from {
     transform: translateY(0%);
@@ -77,7 +61,7 @@
   animation: marquee-vertical var(--duration, 15s) linear infinite;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .marquee-container {
     width: 100%;

@@ -1,5 +1,5 @@
 
-import ScrollableGallery from "../_components/ScrollableGallery";
+import ScrollableGallery from "../../components/ScrollableGallery";
 
 
 export default function Team() {

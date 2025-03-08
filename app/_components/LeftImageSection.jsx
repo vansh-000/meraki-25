@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function LeftImageSection({ data }) {
   return (
-    <div className="w-full h-full flex items-center justify-center">
+    <div className="w-full h-full flex items-center justify-center ">
       <motion.div
         className="w-full h-full flex items-center justify-center p-4 md:p-8 lg:p-12"
         initial={{ opacity: 0 }}

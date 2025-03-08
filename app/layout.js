@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono , Iceland, Iceland} from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 
 
 const IcelandFont = Iceland({
@@ -16,10 +18,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${IcelandFont.className}`}
-      >
-        {children}
+      <body>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -1,5 +1,4 @@
-
-import { Geist, Geist_Mono , Iceland, Iceland} from "next/font/google";
+import {Iceland} from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";

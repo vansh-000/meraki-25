@@ -5,42 +5,66 @@ import { Iceland } from "next/font/google";
 const iceland = Iceland({ subsets: ["latin"], weight: "400" });
 export default function About() {
   return (
-    <div className="h-screen bg-[url('/images/backgrounds/about.jpeg')] md:bg-[url('/images/backgrounds/about1.jpeg')] bg-cover bg-center flex">
+    <div className="h-screen bg-[url('/images/backgrounds/about.jpeg')] md:bg-[url('/images/backgrounds/about1.jpeg')] bg-cover bg-center flex ">
       <Card />
-      <div className={`hidden sm:block md:hidden lg:block ${iceland.className} backdrop-brightness-50 lg:backdrop-brightness-100 z-50 w-[100%] h-[100%] lg:w-[38%] lg:h-[75%]  self-center text-[1.05rem] sm:text-[1.5rem] lg:text-[1.2rem] xl:text-[1.4rem] lg:tracking-wide xl:tracking-wider p-7 lg:p-4 lg:ml-6 xl:mt-8 pt-32 sm:pt-40 `} >
-        MERAKI, the technical fest of IIIT UNA, is more than just a
-        gathering—it's a celebration of innovation, creativity, and
-        technological excellence. Designed for dreamers, creators, and tech
-        enthusiasts, MERAKI provides a platform to explore new ideas,
-        collaborate with like-minded individuals, and push the boundaries of
-        what’s possible. From cutting-edge competitions and hands-on workshops
-        to insightful speaker sessions and interactive exhibitions, MERAKI
-        offers an immersive experience. Whether you're a coder, designer,
-        engineer, or simply passionate about technology, this is your chance to
-        showcase your skills and be part of a community that is shaping the
-        future. Join us at MERAKI and take a step toward innovation and
-        limitless possibilities!
+      <div className="hidden h-screen sm:flex flex-col justify-end items-center md:flex-row  md:justify-start w-full relative ">
+        <div className={`${iceland.className} backdrop-brightness-50 md:backdrop-brightness-100 z-50 w-[90%] h-[41vh] md:w-[42%] md:h-[75%] text-[1rem] sm:text-[1.2rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.4rem] tracking-wide p-5 md:p-8 mt-10 md:mt-52 lg:mt-68 xl:mt-68 mb-24 text-center md:text-left   `}>
+          MERAKI, the technical fest of IIIT UNA, is a hub of innovation,
+          creativity, and technology. It brings together dreamers, creators, and
+          tech enthusiasts to explore ideas, collaborate, and push boundaries.
+          With competitions, workshops, speaker sessions, and exhibitions,
+          MERAKI offers an immersive experience. Whether you're a coder,
+          designer, or engineer, showcase your skills, gain insights, and be
+          part of a community shaping the future. Join us at MERAKI and embrace
+          innovation, discovery, and endless possibilities!
+        </div>
+
+        <div className="absolute top-1/6  sm:left-[35%] lg:top-[26.2%] lg:left-[43%] md:top-[30%] md:left-[44%] z-50 icon">
+          <Image
+            src={merakiAboutLogo}
+            alt="merakiAboutLogo"
+            className="z-100 w-[150px] h-[150px] top-[15%] left-[15%] sm:w-[150px] sm:h-[150px] sm:top-[12%] sm:left-[12%] lg:w-[250px] lg:h-[250px] md:h-[180px] md:w-[180px] absolute lg:top-[15%] lg:left-[15%] md:top-[18%] md:left-[18%]"
+          />
+          <div className=" w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] lg:h-[350px] lg:w-[350px] md:h-[280px] md:w-[280px] grid grid-cols-2"
+            style={{
+              clipPath:
+                "polygon(0% 0%, 0% 100%, 6% 94%, 6% 6%, 94% 6%, 94% 94%, 6% 94%, 0 100%, 100% 100%, 100% 0%)",
+            }}
+          >
+            <div className="bg-white"></div>
+            <div className="bg-black"></div>
+          </div>
+        </div>
       </div>
-      <div className={` sm:hidden md:block lg:hidden ${iceland.className}  z-50 backdrop-brightness-50 md:backdrop-brightness-100 h-[100%] md:w-[38%] md:h-[75%]  self-center text-[1.2rem] p-8 pt-32 md:pt-0 md:p-4 md:ml-6 md:mt-8 `} >
-        MERAKI, the technical fest of IIIT UNA, is a hub of innovation,
-        creativity, and technology. It brings together dreamers, creators, and
-        tech enthusiasts to explore ideas, collaborate, and push boundaries.
-        With competitions, workshops, speaker sessions, and exhibitions, MERAKI
-        offers an immersive experience. Whether you're a coder, designer, or
-        engineer, showcase your skills, gain insights, and be part of a
-        community shaping the future. Join us at MERAKI and embrace innovation,
-        discovery, and endless possibilities!
-      </div>
-      <div className="hidden md:block absolute lg:top-[26.2%] lg:left-[43%] md:top-[30%] md:left-[44%] z-50 ">
-        <Image src={merakiAboutLogo} alt="merakiAboutLogo" className="z-100 lg:w-[250px] lg:h-[250px] md:h-[180px] md:w-[180px] absolute lg:top-[15%] lg:left-[15%] md:top-[18%] md:left-[18%]" />
-        <div className="lg:h-[350px] lg:w-[350px] md:h-[280px] md:w-[280px]  grid grid-cols-2"
-          style={{
-            clipPath:
-              "polygon(0% 0%, 0% 100%, 6% 94%, 6% 6%, 94% 6%, 94% 94%, 6% 94%, 0 100%, 100% 100%, 100% 0%)",
-          }}
-        >
-          <div className="bg-white"></div>
-          <div className="bg-black"></div>
+
+      <div className="sm:hidden flex flex-col p-8 gap-10 mt-20 mb-20 items-center">
+        <div className="  z-50 relative">
+          <Image
+            src={merakiAboutLogo}
+            alt="merakiAboutLogo"
+            className="z-100 w-[150px] h-[150px] top-[13%] left-[13%]  absolute  "
+          />
+          <div
+            className=" w-[200px] h-[200px]  grid grid-cols-2 "
+            style={{
+              clipPath:
+                "polygon(0% 0%, 0% 100%, 6% 94%, 6% 6%, 94% 6%, 94% 94%, 6% 94%, 0 100%, 100% 100%, 100% 0%)",
+            }}
+          >
+            <div className="bg-white"></div>
+            <div className="bg-black"></div>
+          </div>
+        </div>
+        <div className={`${iceland.className} p-8 backdrop-brightness-50 max-h-[38vh] overflow-y-scroll snap-y snap-mandatory scroll-hidden`}>
+          <p className="snap-start py-4"> MERAKI, the technical fest of IIIT UNA, is a hub of innovation,
+          creativity, and technology. It brings together dreamers, creators, and
+          tech enthusiasts to explore ideas, collaborate, and push boundaries.
+          With competitions, workshops, speaker sessions, and exhibitions, MERAKI
+          offers an immersive experience. Whether you're a coder, designer, or
+          engineer, showcase your skills, gain insights, and be part of a
+          community shaping the future. Join us at MERAKI and embrace innovation,
+          discovery, and endless possibilities! </p>
+          
         </div>
       </div>
     </div>

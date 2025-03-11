@@ -22,13 +22,12 @@ const Navbar = () => {
 
     return (
         <div>
-            {/* Navbar */}
-            <div className="absolute z-[200] w-[90%] left-1/2 -translate-x-1/2 mt-3 sm:mt-8 flex flex-col items-center">
+            <div className="absolute z-[200] w-[100%] left-1/2 -translate-x-1/2">
                 <div
-                    className="w-full h-[70px] bg-white/6 backdrop-blur-lg border border-white/10 shadow-lg flex items-center justify-between px-6 relative z-[200]"
+                    className="w-full h-[70px] p-2 md:p-6 bg-white/10 backdrop-blur-lg border border-white/10 shadow-lg flex items-center justify-between relative z-[200]"
                     style={{
                         clipPath:
-                            "polygon(0% 100%, 100% 100%, 100% 0%, 78% 0%, 70.5% 40%, 26.4% 40%, 19.3% .6%, 0% 1.6%, 0% 20.9%, 0% 33%, 0% 68.4%, 0% 90.6%, 0% 100%)",
+                            "polygon(0% 0%, 100% 0%, 100% 100%, 78% 100%, 70% 60%, 26.4% 60%, 19% 99%, 0% 98%, 0% 79%, 0% 67%, 0% 31.6%, 0% 9.4%, 0% 0%)",
                     }}
                 >
                     <div className="w-[60px] h-[40px] bg-no-repeat bg-contain bg-center bg-[url('/images/Vectors/logo.svg')]" />
@@ -37,8 +36,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Animated Menu */}
             <AnimatePresence>
                 {menuOpen && (
                     <motion.div
@@ -49,7 +46,6 @@ const Navbar = () => {
                         transition={{ duration: 0.6, ease: "easeInOut" }}
                         className="fixed inset-0 bg-black flex flex-col items-center justify-center text-white z-[200]"
                     >
-                        {/* Close Button Inside the Modal */}
                         <IoClose
                             className="absolute top-6 right-6 sm:top-10 sm:right-10 text-white text-4xl cursor-pointer transition-all duration-300 hover:scale-110"
                             onClick={() => setMenuOpen(false)}

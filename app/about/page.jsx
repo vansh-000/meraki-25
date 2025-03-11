@@ -57,8 +57,7 @@ export default function About() {
         </div>
         <div className={`${iceland.className} p-4 text-center
          backdrop-brightness-50`}>
-          MERAKI, the technical fest of IIIT UNA, is a hub of innovation, creativity, and technology. It brings together dreamers, creators, and tech enthusiasts to explore ideas, collaborate, and push boundaries. With competitions, workshops, speaker sessions, and exhibitions, MERAKI offers an immersive experience.<br />
-          Whether you're a coder, designer, or engineer, showcase your skills, gain insights, and be part of a community shaping the future. Join us at MERAKI and embrace innovation, discovery, and endless possibilities!
+          MERAKI, the technical fest of IIIT UNA, is a hub of innovation, creativity, and technology. It brings together dreamers, creators, and tech enthusiasts to explore ideas, collaborate, and push boundaries. With competitions, workshops, speaker sessions, and exhibitions, MERAKI offers an immersive experience. Whether you're a coder, designer, or engineer, showcase your skills, gain insights, and be part of a community shaping the future. Join us at MERAKI and embrace innovation, discovery, and endless possibilities!
         </div>
       </div>
     </div>

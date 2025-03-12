@@ -14,7 +14,6 @@ const Navbar = () => {
         { label: "Gallery", path: "/gallery" },
         { label: "About", path: "/about" },
         { label: "Brochure", path: "/brochure" },
-        { label: "Sponsors", path: "/sponsors" },
         { label: "Team", path: "/team" },
         { label: "FAQs", path: "/faq" },
         { label: "Contact Us", path: "/contact" },

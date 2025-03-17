@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
 
+
 export function MarqueeDemoVertical({ names }) {
   return (
     <div className="relative w-full h-screen z-50">

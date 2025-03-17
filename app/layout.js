@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 
 
-const IcelandFont = Iceland({
+export const IcelandFont = Iceland({
   subsets : ['latin'],
   weight : '400'
 })

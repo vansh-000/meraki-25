@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import LeftImageSection from "./LeftImageSection";
 import RightImageSection from "./RightImageSection";
 import { MarqueeDemoVertical } from "./Marquee";
+import { Iceland } from "next/font/google";
+
+const iceland = Iceland({ subsets: ["latin"], weight: "400" });
 
 const data = [
   { name: "Vansh Namdev", img: "https://avatar.vercel.sh/jack" },
@@ -29,7 +32,7 @@ export default function ScrollableGallery() {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center text-white relative overflow-hidden ">
+    <div className={`${iceland.className} h-screen flex items-center justify-center text-white relative overflow-hidden`} >
       {/* Four Sections Grid with Ratio 10% - 30% - 50% - 10% */}
       <div className="grid grid-cols-[10%_45%_35%_10%] w-full h-full items-center">
         {/* Left Marquee */}
@@ -56,8 +59,6 @@ export default function ScrollableGallery() {
           <MarqueeDemoVertical names={data} currentIndex={currentIndex} />
         </div>
       </div>
-
-     
     </div>
   );
 }

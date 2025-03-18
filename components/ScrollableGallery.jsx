@@ -32,7 +32,9 @@ export default function ScrollableGallery() {
   };
 
   return (
-    <div className={`${iceland.className} h-screen flex items-center justify-center text-white relative overflow-hidden`} >
+    <div
+      className={`${iceland.className} h-screen flex items-center justify-center text-white relative overflow-hidden bg-black/40 backdrop-blur-sm`}
+    >
       {/* Four Sections Grid with Ratio 10% - 30% - 50% - 10% */}
       <div className="grid grid-cols-[10%_45%_35%_10%] w-full h-full items-center">
         {/* Left Marquee */}

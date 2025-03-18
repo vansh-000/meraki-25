@@ -24,8 +24,6 @@ export function MarqueeDemoVertical({ names }) {
         </Marquee>
       </div>
 
-    
-
       <div className="block md:hidden w-full absolute bottom-0 left-0  z-50 ">
         <Marquee pauseOnHover reverse className="[--duration:15s]   border-white border">
           {names.map((item, index) => (

@@ -1,13 +1,17 @@
 import Image from "next/image";
 import event from "@/public/images/backgrounds/event.png"
-import { Iceland } from "next/font/google";
+import { Iceland, Red_Rose  } from "next/font/google";
 const iceland = Iceland({ subsets: ["latin"], weight: "400" });
+const redRose = Red_Rose({ subsets: ["latin"], weight: ["400", "700"] });
 
 const EventCard = () => {
   return (
-    <div className=" h-[280px] w-[200px] sm:h-[300px] sm:w-[200px]  md:h-[340px] md:w-[235px] lg:h-[380px] lg:w-[265px] xl:h-[414px] xl:w-[298px] relative  flex flex-col justify-end ">
+    <div className=" h-[260px] w-[230px] sm:h-[310px] sm:w-[300px]  md:h-[340px] md:w-[330px] lg:h-[340px] lg:w-[330px] xl:h-[440px] xl:w-[430px] relative  flex flex-col justify-end ">
       
       <Image src={event} alt="eventImage" className="absolute top-0 left-0 w-full h-full rounded-2xl z-0"/>
+      <div className="z-10 absolute top-1/2 left-3 md:left-3  xl:left-4">
+        <p className={` ${redRose.className} text-4xl md:text-5xl xl:text-6xl text-[#F5DE19] `}>{`<1>`}</p>
+      </div>
       <div
         className="w-full h-1/2 bg-[#303030] text-white  overflow-hidden rounded-2xl relative flex items-end justify-center z-10"
         style={{
@@ -16,11 +20,11 @@ const EventCard = () => {
         }}
       >
         <div className="relative w-full h-full flex flex-col p-2">
-          <h2 className={` ${iceland.className} absolute w-[50%] left-20 text-white text-[0.9rem] sm:text-md md:text-[1.1rem] lg:text-xl xl:text-2xl font-bold z-20 tracking-widest  uppercase  -mx-4 lg:-mx-0 xl:mx-2`}>
+          <h2 className={` ${iceland.className} absolute w-[50%] text-white text-[0.9rem] sm:text-md md:text-[1.1rem] px-1 lg:text-[1.1rem] xl:text-2xl font-bold z-20 tracking-[0.24em]  uppercase left-16 sm:left-28 md:left-[6rem] lg:left-[5.5rem] xl:left-[7.8rem]`}>
             Blockchain Development
           </h2>
-          <p className={` ${iceland.className} absolute top-12 sm:top-14 md:top-14 lg:top-18  text-white text-[0.7rem] sm:text-[0.7rem] md:text-sm lg:text-md xl:text-lg  w-full z-20  pr-6 p-2 text-justify  `}>
-          Whether you've got a design ready to go or need us to whip one up, we'll tackle the development part with unmatched expertise and precision.
+          <p className={` ${iceland.className} absolute top-12 sm:top-14 md:top-14 lg:top-[3.7rem] xl:top-20  text-white text-[0.72rem] sm:text-[0.9rem] md:text-[1rem]  xl:text-xl  w-full z-20  pr-6 p-2 text-justify  `}>
+          A competitive Capture The Flag event testing cybersecurity skills with challenges in cryptography, reverse engineering, web exploitation, and forensics.
           </p>
         </div>
       </div>

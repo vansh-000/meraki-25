@@ -33,8 +33,10 @@ export default function HomeSlider() {
           clickable: true,
           dynamicBullets: true,
           renderBullet: (index, className) =>
-            `<span class='${className} bg-white'></span>`,
+            `<span class='${className} !bg-blue-500 opacity-50 w-3 h-3 mx-1'></span>`,
         }}
+        
+        
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -72,7 +74,7 @@ export default function HomeSlider() {
           { id: 10, title: "Data Science Breakthroughs", img: "/images/backgrounds/event10.jpeg" },
         ].map((event) => (
           <SwiperSlide key={event.id} className="h-full flex items-center justify-center my-28 sm:my-20 md:my-12 lg:my-6">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center lg:my-12 xl:my-0">
               <EventCard
                 eventNumber={event.id}
                 title={event.title}

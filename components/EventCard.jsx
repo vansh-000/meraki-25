@@ -5,7 +5,7 @@ const iceland = Iceland({ subsets: ["latin"], weight: "400" });
 
 const EventCard = () => {
   return (
-    <div className="h-[414px] w-[298px] relative  flex flex-col justify-end">
+    <div className=" h-[280px] w-[200px] sm:h-[300px] sm:w-[200px]  md:h-[340px] md:w-[235px] lg:h-[380px] lg:w-[265px] xl:h-[414px] xl:w-[298px] relative  flex flex-col justify-end ">
       
       <Image src={event} alt="eventImage" className="absolute top-0 left-0 w-full h-full rounded-2xl z-0"/>
       <div
@@ -16,10 +16,10 @@ const EventCard = () => {
         }}
       >
         <div className="relative w-full h-full flex flex-col p-2">
-          <h2 className={` ${iceland.className} absolute w-[50%] left-20 text-white text-2xl font-bold z-20 tracking-widest  uppercase px-2`}>
+          <h2 className={` ${iceland.className} absolute w-[50%] left-20 text-white text-[0.9rem] sm:text-md md:text-[1.1rem] lg:text-xl xl:text-2xl font-bold z-20 tracking-widest  uppercase  -mx-4 lg:-mx-0 xl:mx-2`}>
             Blockchain Development
           </h2>
-          <p className={` ${iceland.className} absolute top-18  text-white text-lg  w-full z-20 p-2 `}>
+          <p className={` ${iceland.className} absolute top-12 sm:top-14 md:top-14 lg:top-18  text-white text-[0.7rem] sm:text-[0.7rem] md:text-sm lg:text-md xl:text-lg  w-full z-20  pr-6 p-2 text-justify  `}>
           Whether you've got a design ready to go or need us to whip one up, we'll tackle the development part with unmatched expertise and precision.
           </p>
         </div>

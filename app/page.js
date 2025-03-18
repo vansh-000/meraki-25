@@ -7,17 +7,19 @@ import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
-    <div className="overflow-y-auto">
+    <div className="overflow-hidden">
       <div
-        className="h-screen overflow-y-scroll snap-y snap-mandatory"
+        className="h-screen overflow-y-auto snap-y snap-mandatory"
         style={{
+          WebkitOverflowScrolling: "touch",
           scrollbarWidth: "none",
           msOverflowStyle: "none",
+          scrollSnapType: "y mandatory", 
         }}
       >
         <style jsx>{`
           div::-webkit-scrollbar {
-            display: none;
+            display: none; // Hides scrollbar in Chrome/Safari
           }
         `}</style>
 
@@ -33,7 +35,7 @@ export default function Home() {
           <HomeSponsors />
         </section>
 
-        <section className="h-screen snap-start ">
+        <section className="h-screen snap-start">
           <HomeContact />
           <Footer />
         </section>

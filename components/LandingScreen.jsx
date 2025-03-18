@@ -1,6 +1,5 @@
 "use client";
 import { OrbitControls, useTexture } from "@react-three/drei";
-import { Bloom, EffectComposer } from '@react-three/postprocessing'
 import { Canvas, useFrame } from "@react-three/fiber";
 import React, { useRef, useState, useEffect } from "react";
 import * as THREE from "three";
@@ -24,7 +23,9 @@ const BackgroundMesh = () => {
     }, []);
 
     useFrame((state, delta) => {
-        cyl.current.rotation.y += delta * 0.8;
+        if (cyl.current) {
+            cyl.current.rotation.y += delta * 0.8;
+        }
     });
 
     return (
@@ -39,7 +40,7 @@ const BackgroundMesh = () => {
 
 const LandingScreen = () => {
     return (
-        <Canvas camera={{ fov: 50 }}>
+        <Canvas camera={{ fov: 50 }} style={{ pointerEvents: "none" }}>
             <OrbitControls enableZoom={false} />
             <ambientLight />
             <BackgroundMesh />

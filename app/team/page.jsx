@@ -1,16 +1,28 @@
-
 import ScrollableGallery from "../../components/ScrollableGallery";
-
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 export default function Team() {
     return (
       <>
+        {/* Navbar (Topmost) */}
+        <Navbar/>
+
+        {/* Main container */}
         <div
-          className="w-screen h-screen bg-[url('/images/backgrounds/green2.jpeg')] lg:bg-[url('/images/backgrounds/green.jpeg')]
-                object-cover lg:bg-cover  bg-center lg:bg-top bg-no-repeat z-50  "
+          className="relative w-screen h-screen bg-[url('/images/backgrounds/green22.jpeg')] lg:bg-[url('/images/backgrounds/green.jpeg')]
+                md:bg-[url('/images/backgrounds/green22.jpeg')] bg-contain bg-center bg-no-repeat"
         >
-          <ScrollableGallery />
+       
+
+          {/* ScrollableGallery (Above GlassEffect, Below Footer/Header) */}
+          <div className="relative z-20">
+            <ScrollableGallery />
+          </div>
         </div>
+
+        {/* Footer (Topmost) */}
+        <Footer />
       </>
     );
 }

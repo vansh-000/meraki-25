@@ -1,9 +1,13 @@
-export default function Events() {
-    return (
-        <>
-            <div className="inline-flex text-4xl h-screen items-center justify-center">
-            Events Page
-            </div>
-        </>
-    );
+"use client";
+import React from 'react'
+import EventPage from '@/components/EventPage';
+
+function Event() {
+  return (
+    <div>
+      <EventPage/>
+    </div>
+  )
 }
+
+export default Event

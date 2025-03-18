@@ -14,7 +14,7 @@ export default function Events() {
       >
         {cardsData?.length > 0 ? (
           cardsData.map((event, index) => (
-            <div
+            <div 
               key={event.id}
               className={`flex md:${index % 6 < 2 ? 'justify-start' : 'justify-end'} lg:${index % 6 < 3 ? 'justify-start' : 'justify-end'} justify-center w-[90%] mx-auto gap-x-10 hover:scale-105 cursor-pointer`}
             >

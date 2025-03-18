@@ -2,8 +2,12 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import {cardsData} from "../constants/data"
 
 const EventPage = () => {
+    console.log(cardsData)
+    const arr = cardsData.filter((obj)=>obj.name === "Coderation")
+   
   return (
     <>
       <Head>
@@ -59,6 +63,7 @@ const EventPage = () => {
                 <h2 className="text-lg font-mono text-white uppercase border-b border-white/70 pb-2 mb-3 lg:text-xl text-right">
                   DESCRIPTION
                 </h2>
+                <div className="flex flex-col gap-24">
                 <p className="text-sm text-gray-200 mb-3">
                   A simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum has been the industry's standard dummy text ever
@@ -67,17 +72,17 @@ const EventPage = () => {
                 <p className="text-purple-300 hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer">
                   REGISTER HERE
                 </p>
+                </div>
               </div>
 
               {/* Threat Level & Prize Pool */}
-              <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 rotate-card">
+              <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 rotate-card sm:mb-1">
                 <h2 className="text-lg font-mono text-white uppercase border-b border-white/70 pb-2 mb-4 text-center lg:text-xl">
                   THREAT LEVEL &amp; PRIZE POOL
                 </h2>
 
                 <div className="flex flex-row gap-3 items-center">
-                <div className="w-full max-w-[180px]">
-                <div className="w-full max-w-[180px]">
+                <div className="w-full max-w-[180px] ">
   <div className="relative w-full aspect-square bg-transparent flex items-center justify-center">
     <svg
       id="52:21"
@@ -97,37 +102,44 @@ const EventPage = () => {
       <text
         x="20" y="30" 
         fill="white"
-        fontSize="12"
+        fontSize="14"
         fontFamily="monospace"
         fontWeight="bold"
         
       >
         THREAT
       </text>
-
+      <line x1="20" y1="35" x2="100" y2="35" stroke="white" strokeWidth="3" />
+    
       <text
-        x="20" y="80"
+        x="20" y="120"
         fill="white"
         fontSize="10"
         fontFamily="monospace"
+        style={{
+            marginTop: "100px"
+        }}
       >
         Mystery
       </text>
 
       <text
-        x="20" y="100"
+        x="20" y="140"
         fill="red"
-        fontSize="10"
+        fontSize="12"
         fontFamily="monospace"
         fontWeight="bold"
+        style={{
+            paddingRight:"10px"
+        }}
       >
         Threat level:
       </text>
 
       <text
-        x="90" y="100"
+        x="110" y="140"
         fill="red"
-        fontSize="10"
+        fontSize="12"
         fontFamily="monospace"
         fontWeight="bold"
       >
@@ -135,7 +147,7 @@ const EventPage = () => {
       </text>
     </svg>
   </div>
-</div>
+
 </div>
                     <div className="w-full max-w-[180px] flex flex-col gap-10 justify-center items-center">
                   <div className="text-white font-mono text-center">

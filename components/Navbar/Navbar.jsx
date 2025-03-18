@@ -13,7 +13,6 @@ const Navbar = () => {
         { label: "Events", path: "/events" },
         { label: "Gallery", path: "/gallery" },
         { label: "About", path: "/about" },
-        { label: "Brochure", path: "/brochure" },
         { label: "Team", path: "/team" },
         { label: "FAQs", path: "/faq" },
         { label: "Contact Us", path: "/contact" },

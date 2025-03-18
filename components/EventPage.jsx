@@ -18,7 +18,6 @@ const EventPage = () => {
           }
         `}</style>
       </Head>
-
       <div
         className="min-h-screen w-full bg-black flex items-center justify-center p-4 relative overflow-hidden"
         style={{
@@ -137,9 +136,7 @@ const EventPage = () => {
     </svg>
   </div>
 </div>
-
 </div>
-
                     <div className="w-full max-w-[180px] flex flex-col gap-10 justify-center items-center">
                   <div className="text-white font-mono text-center">
                     <p className="text-lg">PRIZE POOL:</p>

@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import EventCard from "./EventCard";
+import { cardsData } from "@/constants/data";
 
 export default function HomeSlider() {
   return (
@@ -27,7 +28,7 @@ export default function HomeSlider() {
         slidesPerView={1}
         centeredSlides={true}
         loop={true}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 7500, disableOnInteraction: false }}
         navigation
         pagination={{
           clickable: true,
@@ -61,25 +62,14 @@ export default function HomeSlider() {
           },
         }}
         className="w-full max-w-7xl h-[500px]">
-        {[
-          { id: 1, title: "AI & Machine Learning", img: "/images/backgrounds/event1.jpeg" },
-          { id: 2, title: "Blockchain Development", img: "/images/backgrounds/blockChain_card.jpeg" },
-          { id: 3, title: "Cybersecurity Essentials", img: "/images/backgrounds/event3.jpeg" },
-          { id: 4, title: "Cloud Computing", img: "/images/backgrounds/event4.jpeg" },
-          { id: 5, title: "Internet of Things (IoT)", img: "/images/backgrounds/event5.jpeg" },
-          { id: 6, title: "Big Data & Analytics", img: "/images/backgrounds/event6.jpeg" },
-          { id: 7, title: "AR/VR Innovations", img: "/images/backgrounds/event7.jpeg" },
-          { id: 8, title: "Software Development Trends", img: "/images/backgrounds/event8.jpeg" },
-          { id: 9, title: "DevOps & Automation", img: "/images/backgrounds/event9.jpeg" },
-          { id: 10, title: "Data Science Breakthroughs", img: "/images/backgrounds/event10.jpeg" },
-        ].map((event) => (
+        {cardsData.map((event) => (
           <SwiperSlide key={event.id} className="h-full flex items-center justify-center my-28 sm:my-20 md:my-12 lg:my-6">
             <div className="flex items-center justify-center lg:my-12 xl:my-0 ">
               <EventCard
-                eventNumber={event.id}
-                title={event.title}
-                text="Event details here."
-                image={event.img}
+                EventNumber={event.id}
+                name={event.name}
+                overview={event.overview}
+                image={event.image}
               />
             </div>
           </SwiperSlide>

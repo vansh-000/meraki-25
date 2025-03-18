@@ -7,8 +7,8 @@ export default function About() {
   return (
     <div className=" bg-[url('/images/backgrounds/about.jpeg')] md:bg-[url('/images/backgrounds/about1.jpeg')] bg-cover bg-center flex ">
       <Card />
-      <div className="hidden h-screen sm:flex flex-col justify-end items-center md:flex-row  md:justify-start w-full relative ">
-        <div className={`${iceland.className} backdrop-brightness-50 md:backdrop-brightness-100 z-50 h-[41vh] w-[60%] md:w-[49%] md:h-[75%] text-[1rem] sm:text-[1.2rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.4rem] tracking-wide p-5 md:p-8 mt-10 md:mt-52 lg:mt-68 xl:mt-68 mb-24 text-center `}>
+      <div className="hidden h-screen sm:flex  flex-col justify-end items-center md:flex-row  md:justify-start w-full relative ">
+        <div className={`${iceland.className} backdrop-brightness-50 md:backdrop-brightness-100 z-50 h-[41vh] w-[80%] md:w-[49%] md:h-[75%] text-[1rem] sm:text-[1.2rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.4rem] tracking-wide p-5 md:p-8 mt-10 md:mt-52 lg:mt-68 xl:mt-68 mb-24 text-center`}>
           MERAKI, the technical fest of IIIT UNA, is a hub of innovation,
           creativity, and technology. It brings together dreamers, creators, and
           tech enthusiasts to explore ideas, collaborate, and push boundaries.
@@ -56,7 +56,7 @@ export default function About() {
           </div>
         </div>
         <div className={`${iceland.className} p-4 text-center
-         backdrop-brightness-50`}>
+         backdrop-brightness-50  `}>
           MERAKI, the technical fest of IIIT UNA, is a hub of innovation, creativity, and technology. It brings together dreamers, creators, and tech enthusiasts to explore ideas, collaborate, and push boundaries. With competitions, workshops, speaker sessions, and exhibitions, MERAKI offers an immersive experience. Whether you're a coder, designer, or engineer, showcase your skills, gain insights, and be part of a community shaping the future. Join us at MERAKI and embrace innovation, discovery, and endless possibilities!
         </div>
       </div>

@@ -11,7 +11,7 @@ export default function Team() {
         {/* Main container */}
         <div
           className="relative w-screen h-screen bg-[url('/images/backgrounds/green22.jpeg')] lg:bg-[url('/images/backgrounds/green.jpeg')]
-                md:bg-[url('/images/backgrounds/green22.jpeg')] bg-cover bg-center bg-no-repeat"
+                md:bg-[url('/images/backgrounds/green22.jpeg')] bg-contain bg-center bg-no-repeat"
         >
        
 

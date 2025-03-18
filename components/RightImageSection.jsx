@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function RightImageSection({ data, currentIndex, setCurrentIndex }) {
@@ -11,7 +10,7 @@ export default function RightImageSection({ data, currentIndex, setCurrentIndex 
         key={currentIndex}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, ease: "easeInOut" }}
+        transition={{ duration: 0.4, ease: "circIn" }}
         className="flex flex-col justify-center items-center gap-y-4 sm:gap-y-6 min-h-screen w-full h-auto md:h-[700px] bg-transparent rounded-xl p-4 sm:p-6"
       >
         {/* Name Section */}
@@ -19,7 +18,7 @@ export default function RightImageSection({ data, currentIndex, setCurrentIndex 
           className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl tracking-wide drop-shadow-lg font-extralight text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.4, delay: 0.2, ease: "circIn" }}
         >
           {data.name}
         </motion.div>

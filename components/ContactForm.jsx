@@ -21,10 +21,10 @@ export const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, 
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         formData,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
@@ -85,7 +85,7 @@ export const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className="bg-white text-black rounded-3xl px-6 py-2 text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide self-end"
+        className="bg-white cursor-pointer text-black rounded-3xl px-6 py-2 text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide self-end"
         disabled={isLoading}
       >
         {isLoading ? "SENDING..." : isSent ? "SENT!" : "SEND"}

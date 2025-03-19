@@ -364,13 +364,13 @@ export const TeamData = [
     name: "Gurpreet Kaur",
     img: "/Team/gurpreetKaur.jpeg",
     club: "Faculty",
-    team: "Co-oridnator",
+    team: "Cooridnator",
   },
   {
     name: "Nishtha Hooda",
     img: "/Team/nishthaHooda.jpeg",
     club: "Faculty",
-    team: "Co-oridnator",
+    team: "Cooridnator",
   },
   {
     name: "Prakhar Jaiswal",

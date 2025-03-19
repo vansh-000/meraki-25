@@ -93,9 +93,6 @@ export const ContactForm = () => {
       <div className="text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide mt-6 sm:mt-8">
         Reach out at: meraki@iiitu.ac.in
       </div>
-      <div className="text-lg sm:text-base md:text-lg lg:text-xl tracking-wide max-w-lg">
-        Based in: IIIT Una, Saloh - 177209, Tehsil Haroli, Distt. Una, Himachal Pradesh
-      </div>
     </form>
   );
 };

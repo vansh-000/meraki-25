@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef } from "react";
-import {faqs} from "@/constants/data.js";
+import { faqs } from "@/constants/data.js";
 
 function Accordion() {
   const [selected, setSelected] = useState(null);
@@ -22,14 +22,14 @@ function Accordion() {
             faqs.map((item) => (
               <div
                 key={item.id}
-                className="mb-2 p-4 rounded-lg bg-white/10 border border-white/20 text-white transition-all duration-300 shadow-md"
+                className="mb-2 p-4 rounded-lg bg-white/10 border border-white/10 text-white transition-all duration-300 shadow-md"
               >
                 <button
                   onClick={() => toggleSingleSelection(item.id)}
                   className="flex justify-between items-center w-full cursor-pointer font-medium focus:outline-none"
                   aria-expanded={selected === item.id}
                 >
-                  <h1 className="text-md md:text-2xl">{item.title}</h1>
+                  <h1 className="text-md text-white md:text-2xl">{item.title}</h1>
                   <span
                     className={`text-md md:text-2xl font-bold transition-transform duration-300 ${selected === item.id ? "rotate-45" : "rotate-0"
                       }`}
@@ -45,12 +45,12 @@ function Accordion() {
                     opacity: selected === item.id ? 1 : 0,
                   }}
                 >
-                  <p className="text-gray-200 text-base md:text-xl mt-2">{item.answer}</p>
+                  <p className="text-white text-base md:text-xl mt-2">{item.answer}</p>
                 </div>
               </div>
             ))
           ) : (
-            <div className="text-gray-400 text-center">No Data Found</div>
+            <div className="text-white text-center">No Data Found</div>
           )}
         </div>
       </div>

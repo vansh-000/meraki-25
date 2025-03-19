@@ -4,6 +4,7 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +29,9 @@ const Navbar = () => {
                             "polygon(0% 0%, 100% 0%, 100% 100%, 78% 100%, 70% 60%, 26.4% 60%, 19% 99%, 0% 98%, 0% 79%, 0% 67%, 0% 31.6%, 0% 9.4%, 0% 0%)",
                     }}
                 >
-                    <div className="w-[60px] h-[40px] bg-no-repeat bg-contain bg-center bg-[url('/images/Vectors/logo.svg')]" />
+                    <Link href="/">
+                        <div className="w-[60px] h-[40px] bg-no-repeat bg-contain bg-center bg-[url('/images/Vectors/logo.svg')]" />
+                    </Link>
                     <div className="cursor-pointer z-[200]" onClick={() => setMenuOpen(!menuOpen)}>
                         <RxHamburgerMenu className="text-white text-4xl transition-all duration-300" />
                     </div>

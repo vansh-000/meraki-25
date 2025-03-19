@@ -22,9 +22,6 @@ const Footer = () => {
               <a href="https://www.instagram.com/meraki_iiitu/">
                 <Image src={insta} alt="Follow us on Instagram" className="w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9" />
               </a>
-              <a href="#">
-                <Image src={linkedIn} alt="Connect with us on LinkedIn" className="w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9" />
-              </a>
             </div>
           </div>
           <div className="flex flex-col gap-2 md:gap-3 items-end">
@@ -39,15 +36,11 @@ const Footer = () => {
         </div>
       </div>
       <div className={`md:hidden flex relative mt-[-40px] bottom-0 ${iceland.className} left-0 right-0 bg-black w-full h-20 flex flex-row justify-around items-center px-6 py-2 z-50`}>
-        <h2 className="text-lg tracking-wide text-white">MERAKI - AY'25</h2>
-        <div className="flex gap-2 mt-2">
+      
           <a href="https://www.instagram.com/meraki_iiitu/">
             <Image src={insta} alt="Follow us on Instagram" className="w-6 h-6" />
           </a>
-          <a href="#">
-            <Image src={linkedIn} alt="Connect with us on LinkedIn" className="w-6 h-6" />
-          </a>
-        </div>
+        <h2 className="text-lg tracking-wide text-white">MERAKI - AY'25</h2>
         <h2 className="text-lg tracking-wide text-white">IIIT UNA</h2>
       </div>
     </>

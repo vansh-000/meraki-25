@@ -32,7 +32,7 @@ const Preloader = ({ onFinish }) => {
         audioRef.current.pause();
         audioRef.current.currentTime = 0;
       }
-    }, 4500);
+    }, 1500);
 
     return () => {
       document.removeEventListener("click", playAudio);
@@ -48,9 +48,7 @@ const Preloader = ({ onFinish }) => {
       animate={{ opacity: 0 }}
       transition={{ duration: 1, ease: "easeOut", delay: 3.5 }}
     >
-      {/* Audio Element */}
       <audio ref={audioRef} src={preloaderSound} playsInline onCanPlay={() => console.log("Audio Loaded")} />
-      
       <motion.div
         initial={{ scale: 1, opacity: 1 }}
         animate={{ scale: 0.5, opacity: 0 }}

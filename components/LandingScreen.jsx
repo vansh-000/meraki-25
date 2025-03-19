@@ -5,7 +5,7 @@ import React, { useRef, useState, useEffect } from "react";
 import * as THREE from "three";
 
 const BackgroundMesh = () => {
-    const tex = useTexture("/images/image1.png");
+    const tex = useTexture("/images/image.png");
     const cyl = useRef(null);
     const [size, setSize] = useState([2, 2, 2]);
 

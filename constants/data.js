@@ -55,7 +55,7 @@ export const cardsData = [
     name: "Stock Buzz",
     overview:
       "An exciting event integrating a compelling story with a virtual stock market simulation where teams strategize trades based on an unfolding narrative.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event1.png",
     date: "2nd April 2025",
     time: "1:30 pm – 5:00 pm",
     regDate: "30th March 2025",
@@ -89,7 +89,7 @@ export const cardsData = [
     name: "Coderation",
     overview:
       "A competitive programming contest where participants solve algorithmic challenges on lab PCs under time constraints with live ranking updates.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event3.png",
     date: "2nd April 2025",
     time: "7:30 pm - 9:00 pm",
     regDate: "29th March 2025",
@@ -106,7 +106,7 @@ export const cardsData = [
     name: "Prog-o-thon",
     overview:
       "A dynamic hackathon challenging teams to conceptualize, design, and develop innovative projects over 2 nights and 1 day, culminating in a presentation.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event4.png",
     date: "2nd & 3rd April 2025",
     time: "9:00 pm onwards",
     regDate: "28th March 2025",
@@ -157,7 +157,7 @@ export const cardsData = [
     name: "Ard-Win-O",
     overview:
       "A technical event challenging participants to build a functional project using Arduino Uno and sensors, following a quiz qualifier round.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event7.png",
     date: "3rd April 2025",
     time: "10:30 am - 1:00 pm",
     regDate: "30th March 2025",
@@ -191,7 +191,7 @@ export const cardsData = [
     name: "Sold Mold",
     overview:
       "A soldering challenge where teams identify a faulty component, select a circuit, and implement it on a PCB as quickly as possible.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event9.png",
     date: "3rd April 2025",
     time: "1:45 pm - 5:30 pm",
     regDate: "30th March 2025",
@@ -208,7 +208,7 @@ export const cardsData = [
     name: "Run Code Run",
     overview:
       "A competitive coding contest where teams solve multiple programming challenges while facing random eliminations and strategic QR code immunity rounds.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event10.png",
     date: "3rd April 2025",
     time: "6:00 pm - 8:30 pm",
     regDate: "31st March 2025",
@@ -225,7 +225,7 @@ export const cardsData = [
     name: "Tech Debate",
     overview:
       "A debate competition where teams discuss tech-related topics, presenting opening statements, counter-arguments, and concluding remarks to persuade the judges.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event11.png",
     date: "4th April 2025",
     time: "10:45 am - 1:00 pm",
     regDate: "31st March 2025",
@@ -259,14 +259,14 @@ export const cardsData = [
     name: "Mystery Ops",
     overview:
       "An immersive escape-room style challenge where teams navigate through themed rooms, solving puzzles and challenges to advance and win.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event13.png",
     date: "4th April 2025",
     time: "1:30 pm - 2:45 pm",
     regDate: "31st March 2025",
     club: "AAVESH",
     interIIIT: "Yes",
     teamLimit: "2-4 members per team",
-    tag: ["escape room", "puzzle", "challenge"],
+    tag: ["Escape room", "Mystery", "Challenge"],
     difficulty: "Mysterious",
     prizePool: "₹10,000",
     unstopLink: "https://unstop.com/event/mystery-ops",
@@ -293,7 +293,7 @@ export const cardsData = [
     name: "Hired or Fired?",
     overview:
       "A recruitment challenge featuring coding, aptitude, and mock interview rounds designed to test individual problem-solving and technical skills.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event15.png",
     date: "4th April 2025",
     time: "3:00 pm - 5:30 pm",
     regDate: "31st March 2025",
@@ -310,7 +310,7 @@ export const cardsData = [
     name: "Coder's Face Off",
     overview:
       "A frontend development competition where participants convert Figma designs into functional web or mobile interfaces, with live twists during the contest.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event16.png",
     date: "3rd April 2025",
     time: "3:00 PM - 5:30 PM",
     regDate: "30th March 2025",
@@ -327,7 +327,7 @@ export const cardsData = [
     name: "Robo-Drive",
     overview:
       "A thrilling robotic car race where teams design, assemble, and program high-speed robotic cars to navigate a challenging course in elimination and final rounds.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event17.png",
     date: "4th April 2025",
     time: "6:00 pm - 8:30 pm",
     regDate: "31st March 2025",
@@ -344,7 +344,7 @@ export const cardsData = [
     name: "UCPC",
     overview:
       "Una Competitive Programming Contest is a team-based competitive programming contest where teams solve algorithmic challenges on a local judge system, with rankings determined by problem-solving speed and accuracy.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event18.png",
     date: "4th April 2025",
     time: "9:30 pm onwards",
     regDate: "31st March 2025",

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomeContact() {
   return (
     <div
@@ -9,7 +11,6 @@ export default function HomeContact() {
       }}
     >
       <div className="absolute inset-0 bg-black opacity-60"></div>
-
       <div className="relative w-full max-w-6xl rounded-2xl shadow-2xl overflow-hidden">
         <div className="flex flex-col md:flex-row items-center justify-between p-6 sm:p-8 md:p-12 lg:p-16 space-y-6 md:space-y-0 md:space-x-12">
           <div className="w-full max-w-lg text-white text-center md:text-left">
@@ -18,9 +19,11 @@ export default function HomeContact() {
               to get in touch with us. We're eager to hear from you!
             </p>
             <div className="mt-6">
-              <button className="bg-white text-black px-6 py-2 md:px-8 md:py-3 text-lg font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
-                Contact Us
-              </button>
+              <Link href="/contact">
+                <button className="bg-white cursor-pointer text-black px-6 py-2 md:px-8 md:py-3 text-lg font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
         </div>

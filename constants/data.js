@@ -431,7 +431,7 @@ export const TeamData = [
   },
   {
     name: "Vansh Verma",
-    img: "/Team/vansh-verma.jpeg",
+    img: "/Team/vansh.jpg",
     club: "Force",
     team: "Devteam",
   },

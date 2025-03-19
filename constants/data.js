@@ -408,3 +408,50 @@ export const cardsData = [
     unstopLink: "https://unstop.com/event/passing-the-code-base",
   },
 ];
+
+
+export const TeamData = [
+  {
+    name: "Gurpreet Kaur",
+    img: "/Team/gurpreetKaur.jpeg",
+    club: "Faculty",
+    team: "Co-oridnator",
+  },
+  {
+    name: "Nishtha Hooda",
+    img: "/Team/nishthaHooda.jpeg",
+    club: "Faculty",
+    team: "Co-oridnator",
+  },
+  {
+    name: "Prakhar Jaiswal",
+    img: "/Team/prakharsir.jpeg",
+    club: "Aavesh",
+    team: "President",
+  },
+  {
+    name: "Vansh Verma",
+    img: "/Team/vansh-verma.jpeg",
+    club: "Force",
+    team: "Devteam",
+  },
+  {
+    name: "Pranav Shrivastava",
+    img: "/Team/pranav-shri.jpeg",
+    club: "EIC",
+    team: "Devteam",
+  },
+  {
+    name: "Pranav Garg",
+    img: "/Team/pranav-garg.jpeg",
+    club: "Aavesh",
+    team: "Devteam",
+  },
+  {
+    name: "Srishti Sethi",
+    img: "/Team/shristi.jpeg",
+    club: "Force",
+    team: "Devteam",
+  },
+  { name: "Aditya Goyal", img: "/Team/aditya.jpeg", club: "Force", team: "Devteam" },
+];

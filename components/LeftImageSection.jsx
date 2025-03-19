@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function LeftImageSection({ data }) {
+  console.log(data);
   return (
     <div className="w-full h-full flex items-center justify-center">
       <motion.div

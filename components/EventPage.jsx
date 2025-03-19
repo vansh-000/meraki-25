@@ -9,7 +9,7 @@ const EventPage = ({data}) => {
   
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>{data.id}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style jsx global>{`
@@ -20,19 +20,20 @@ const EventPage = ({data}) => {
             transform: rotate(-5deg);
           }
         `}</style>
-      </Head>
+      </Head> */}
       <div
-        className="min-h-screen w-full bg-black flex items-center justify-center p-4 relative overflow-hidden"
+        className="min-h-screen w-full bg-black flex items-center justify-center p-4 relative overflow-hidden "
         style={{
           backgroundImage: "url('/images/backgrounds/event.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
+          backgroundRepeat : "no-repeat"
         }}
       >
         <div className="absolute inset-0 z-0 bg-[url('/lightning-bg.jpg')] bg-cover bg-center opacity-70"></div>
 
-        <div className="w-full max-w-6xl z-10 py-6 px-4 mt-12">
+        <div className="w-full max-w-6xl z-10 py-6 px-4 mt-12 ">
           <div className="w-full text-left mb-6">
             <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-wider font-mono">
               {data.name}
@@ -61,8 +62,8 @@ const EventPage = ({data}) => {
                 <h2 className="text-lg font-mono text-white uppercase border-b border-white/70 pb-2 mb-3 lg:text-xl text-right">
                   DESCRIPTION
                 </h2>
-                <div className="flex flex-col gap-24">
-                  <p className="text-sm text-gray-200 mb-3 text-wrap">
+                <div className="flex flex-col gap-36">
+                  <p className="text-sm text-gray-200 mb-3 text-wrap lg:text-xl md:text-lg">
                     {data.overview}
                   </p>
                   <Link
@@ -76,11 +77,11 @@ const EventPage = ({data}) => {
 
               {/* Threat Level & Prize Pool */}
               <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 rotate-card sm:mb-1">
-                <h2 className="text-lg font-mono text-white uppercase border-b border-white/70 pb-2 mb-4 text-center lg:text-xl">
+                <h2 className="text-lg font-mono text-white uppercase border-b border-white/70 pb-2 lg:mb-11 text-center lg:text-xl mb-7">
                   THREAT LEVEL &amp; PRIZE POOL
                 </h2>
 
-                <div className="flex flex-row sm:gap-10 md:gap-15 lg:gap-20 items-center ">
+                <div className="flex flex-row sm:gap-10 md:gap-10 lg:gap-12 items-center ">
                   <div className="w-full max-w-[180px] ">
                     <div className="relative w-full aspect-square bg-transparent flex items-center justify-center">
                       <svg
@@ -106,7 +107,7 @@ const EventPage = ({data}) => {
                           fontFamily="monospace"
                           fontWeight="bold"
                         >
-                          THREAT
+                          THREAT 
                         </text>
                         <line
                           x1="20"
@@ -130,7 +131,7 @@ const EventPage = ({data}) => {
                           Mystery
                         </text>
 
-                        {/* <text
+                        <text
                           x="20"
                           y="140"
                           fill="red"
@@ -141,11 +142,11 @@ const EventPage = ({data}) => {
                             paddingRight: "10px",
                           }}
                         >
-                          Threat level:
-                        </text> */}
+                          Threat:
+                        </text>
 
                         <text
-                          x="20"
+                          x="68"
                           y="140"
                           fill="red"
                           fontSize="12"
@@ -157,13 +158,13 @@ const EventPage = ({data}) => {
                       </svg>
                     </div>
                   </div>
-                  <div className="w-full max-w-[180px] flex flex-col gap-10 justify-center items-center">
+                  <div className="w-full max-w-[180px] flex flex-col gap-5 justify-center items-center">
                     <div className="text-white font-mono text-center">
                       <p className="text-lg">PRIZE POOL :</p>
                       <p className="text-xl font-bold">{data.prizePool}</p>
                     </div>
 
-                    <div className="flex  flex-col lg:flex-row gap-4 ">
+                    <div className="flex  flex-col lg:flex-col gap-4 ">
                      {data.tag.map((tag,index)=>(
                        <div className="bg-purple-400/5 backdrop-blur-sm px-2 py-1 rounded-2xl text-white font-mono border border-purple-500/30 text-wrap" key={index}>
                        {tag}

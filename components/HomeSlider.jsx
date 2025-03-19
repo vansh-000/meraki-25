@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import EventCard from "./EventCard";
-import { cardsData } from "@/constants/data";
+import { cardsData } from "../constants/data";
 
 export default function HomeSlider() {
   return (

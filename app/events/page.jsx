@@ -3,6 +3,7 @@
 import EventCard from "../../components/EventCard";
 import { cardsData } from "@/constants/data";
 
+
 export default function Events() {
   return (
     <>

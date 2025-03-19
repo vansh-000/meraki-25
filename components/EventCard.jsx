@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image";
 import event from "@/public/images/backgrounds/event.png";
+import { useRouter } from "next/navigation";
 import { Iceland, Red_Rose } from "next/font/google";
 const iceland = Iceland({ subsets: ["latin"], weight: "400" });
 const redRose = Red_Rose({ subsets: ["latin"], weight: ["400", "700"] });
@@ -10,8 +12,11 @@ const EventCard = ({
   EventNumber = -1,
   image,
 }) => {
+  const router = useRouter();
+  const routeName = name.split(" ").join("-");
+  console.log(routeName);
   return (
-    <div className=" h-[260px] w-[230px] sm:h-[310px] sm:w-[300px]  md:h-[340px] md:w-[330px] lg:h-[340px] lg:w-[330px] xl:h-[440px] xl:w-[430px] relative  flex flex-col justify-end ">
+    <div className=" h-[260px] w-[230px] sm:h-[310px] sm:w-[300px]  md:h-[340px] md:w-[330px] lg:h-[340px] lg:w-[330px] xl:h-[440px] xl:w-[430px] relative  flex flex-col justify-end " onClick={()=> router.push(`/events/${routeName}`)}>
       <Image
         src={image}
         fill

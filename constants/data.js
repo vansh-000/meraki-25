@@ -115,7 +115,7 @@ export const cardsData = [
     teamLimit: "3 members per team",
     tag: ["hackathon", "innovation", "coding"],
     difficulty: "Intense",
-    prizePool: "₹6,000",
+    prizePool: "₹10,000 + Trophies & Goodies",
     unstopLink: "https://unstop.com/hackathons/progothon-indian-institute-of-information-technology-iiit-una-1433809",
   },
   {
@@ -132,7 +132,7 @@ export const cardsData = [
     teamLimit: "Varies per game",
     tag: ["esports", "gaming", "competition"],
     difficulty: "High-Octane",
-    prizePool: "₹6,000",
+    prizePool: "₹5,000 + Trophies & Goodies",
     unstopLink: "https://unstop.com/event/noscope",
   },
   {
@@ -200,7 +200,7 @@ export const cardsData = [
     teamLimit: "3 members per team",
     tag: ["soldering", "electronics", "hardware"],
     difficulty: "Technical",
-    prizePool: "₹6,000",
+    prizePool: "₹5,000 + Trophies & Goodies",
     unstopLink: "https://unstop.com/p/sold-mold-indian-institute-of-information-technology-iiit-una-1434588",
   },
   {
@@ -217,7 +217,7 @@ export const cardsData = [
     teamLimit: "3 members per team",
     tag: ["coding", "programming", "strategy"],
     difficulty: "Extreme",
-    prizePool: "₹6,000",
+    prizePool: "₹5,000 + Trophies & Goodies",
     unstopLink: "https://unstop.com/hackathons/run-code-run-indian-institute-of-information-technology-iiit-una-1435143",
   },
   {
@@ -286,7 +286,7 @@ export const cardsData = [
     tag: ["quiz", "strategy", "game"],
     difficulty: "Brainstorming",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/event/scales-quest",
+    unstopLink: "https://unstop.com/o/wcJhAZR?lb=rpKpLz37",
   },
   {
     id: "15",
@@ -319,7 +319,7 @@ export const cardsData = [
     teamLimit: "Individual",
     tag: ["frontend", "coding", "design"],
     difficulty: "Challenging",
-    prizePool: "₹6,000",
+    prizePool: "₹5,000 + Trophies & Goodies",
     unstopLink: "https://unstop.com/hackathons/coders-faceoff-indian-institute-of-information-technology-iiit-una-1435066",
   },
   {
@@ -336,7 +336,7 @@ export const cardsData = [
     teamLimit: "Maximum 4 members per team",
     tag: ["robotics", "racing", "innovation"],
     difficulty: "Adrenaline-Packed",
-    prizePool: "₹6,000",
+    prizePool: "₹10,000 + Trophies & Goodies",
     unstopLink: "https://unstop.com/competitions/robo-drive-indian-institute-of-information-technology-iiit-una-1434573",
   },
   {

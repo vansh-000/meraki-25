@@ -2,11 +2,11 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import {cardsData} from "../constants/data"
+import { cardsData } from "../constants/data"
 import Link from "next/link";
 
-const EventPage = ({data}) => {
-  
+const EventPage = ({ data }) => {
+
   return (
     <>
       {/* <Head>
@@ -28,7 +28,7 @@ const EventPage = ({data}) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
-          backgroundRepeat : "no-repeat"
+          backgroundRepeat: "no-repeat"
         }}
       >
         <div className="absolute inset-0 z-0 bg-[url('/lightning-bg.jpg')] bg-cover bg-center opacity-70"></div>
@@ -59,7 +59,7 @@ const EventPage = ({data}) => {
             <div className="w-full sm:w-1/2 grid grid-rows-2 justify-between gap-3">
               {/* Description Card */}
               <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 rotate-card">
-                <h2 className="text-lg font-mono text-white uppercase border-b border-white/70 pb-2 mb-3 lg:text-xl text-right">
+                <h2 className="font-mono text-white uppercase border-b border-white/70 pb-2 mb-3 text-xl text-right">
                   DESCRIPTION
                 </h2>
                 <div className="flex flex-col gap-36">
@@ -107,7 +107,7 @@ const EventPage = ({data}) => {
                           fontFamily="monospace"
                           fontWeight="bold"
                         >
-                          THREAT 
+                          THREAT
                         </text>
                         <line
                           x1="20"
@@ -122,7 +122,7 @@ const EventPage = ({data}) => {
                           x="20"
                           y="120"
                           fill="white"
-                          fontSize="10"
+                          fontSize="15"
                           fontFamily="monospace"
                           style={{
                             marginTop: "100px",
@@ -131,29 +131,9 @@ const EventPage = ({data}) => {
                           Mystery
                         </text>
 
-                        <text
-                          x="20"
-                          y="140"
-                          fill="red"
-                          fontSize="12"
-                          fontFamily="monospace"
-                          fontWeight="bold"
-                          style={{
-                            paddingRight: "10px",
-                          }}
-                        >
-                          Threat:
-                        </text>
-
-                        <text
-                          x="68"
-                          y="140"
-                          fill="red"
-                          fontSize="12"
-                          fontFamily="monospace"
-                          fontWeight="bold"
-                        >
-                          {data.difficulty}
+                        <text x="20" y="140" fill="red" fontSize="15" fontFamily="monospace" fontWeight="bold">
+                          <tspan x="20" y="140">Threat:</tspan>
+                          <tspan x="20" y="155">{data.difficulty}</tspan>
                         </text>
                       </svg>
                     </div>
@@ -165,11 +145,11 @@ const EventPage = ({data}) => {
                     </div>
 
                     <div className="flex  flex-col lg:flex-col gap-4 ">
-                     {data.tag.map((tag,index)=>(
-                       <div className="bg-purple-400/5 backdrop-blur-sm px-2 py-1 rounded-2xl text-white font-mono border border-purple-500/30 text-wrap" key={index}>
-                       {tag}
-                     </div>
-                     ))}
+                      {data.tag.map((tag, index) => (
+                        <div className="bg-purple-400/5 backdrop-blur-sm px-2 py-1 rounded-2xl text-white font-mono border border-purple-500/30 text-wrap" key={index}>
+                          {tag}
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>

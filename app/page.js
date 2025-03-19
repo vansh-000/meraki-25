@@ -42,7 +42,7 @@ export default function Home() {
             <LandingScreen />
             <div
               onClick={() => scrollToNextSection(0)}
-              className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-auto p-0 h-auto flex justify-center items-center z-50 overflow-hidden rounded-full cursor-pointer"
+              className="absolute bottom-12 md:bottom-4 left-1/2 transform -translate-x-1/2 w-auto p-0 h-auto flex justify-center items-center z-50 overflow-hidden rounded-full cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ export default function Home() {
             <HomeSlider />
             <div
               onClick={() => scrollToNextSection(1)}
-              className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-auto h-auto p-0 flex justify-center items-center z-50 overflow-hidden rounded-full cursor-pointer"
+              className="absolute bottom-12 md:bottom-4 left-1/2 transform -translate-x-1/2 w-auto h-auto p-0 flex justify-center items-center z-50 overflow-hidden rounded-full cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ export default function Home() {
             <HomeSponsors />
             <div
               onClick={() => scrollToNextSection(2)}
-              className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-auto p-0 h-auto flex justify-center items-center z-50 overflow-hidden rounded-full cursor-pointer"
+              className="absolute bottom-12 md:bottom-4 left-1/2 transform -translate-x-1/2 w-auto p-0 h-auto flex justify-center items-center z-50 overflow-hidden rounded-full cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,9 +100,9 @@ export default function Home() {
               </svg>
             </div>
           </section>
-          <section className="h-screen snap-start">
+          <section className="h-screen overflow-y-hidden snap-start">
             <HomeContact />
-            <div className="relative bottom-[20px] md:bottom-0 w-full">
+            <div className="relative bottom-[80px] md:bottom-0 w-full">
               <Footer />
             </div>
           </section>

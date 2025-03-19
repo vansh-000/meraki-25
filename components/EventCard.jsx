@@ -37,7 +37,7 @@ const EventCard = ({
       >
         <div className="relative w-full h-full flex flex-col p-2">
           <h2
-            className={` ${iceland.className} absolute w-[50%] text-white text-[0.9rem] sm:text-md md:text-[1.1rem] px-1 lg:text-[1.1rem] xl:text-2xl font-bold z-20 tracking-[0.24em]  uppercase left-16 sm:left-28 md:left-[6rem] lg:left-[5.5rem] xl:left-[7.8rem]`}
+            className={` ${iceland.className} absolute w-[50%] text-white text-[0.9rem] sm:text-md md:text-[1.1rem] px-1 lg:text-[1.2rem] xl:text-2xl font-extrabold z-20 tracking-[0.24em]  uppercase left-16 sm:left-28 md:left-[6rem] lg:left-[6.5rem] xl:left-[7.8rem]`}
           >
             {name}
           </h2>

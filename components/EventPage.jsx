@@ -39,7 +39,7 @@ const EventPage = ({data}) => {
             </h1>
           </div>
 
-          <div className="w-full flex flex-col sm:flex-row lg:gap-28 lg:mb-20 gap-4">
+          <div className="w-full flex flex-col sm:flex-row lg:gap-20 lg:mb-20 gap-4">
             {/* Left Card with Image */}
             <div className="w-full sm:w-1/2 rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 relative overflow-hidden  ">
               <h2 className=" font-mono text-white uppercase border-b border-white/70 pb-2 mb-3 text-xl ">

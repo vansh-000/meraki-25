@@ -72,7 +72,7 @@ export const cardsData = [
     name: "Money Heist",
     overview:
       "A high-stakes challenge where teams assemble a crew, plan a bank heist, and overcome obstacles like hostage negotiations and police raids to escape with the most money.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event2.png",
     date: "2nd April 2025",
     time: "5:00 pm - 7:30 pm",
     regDate: "30th March 2025",

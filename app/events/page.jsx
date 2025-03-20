@@ -3,8 +3,21 @@
 import EventCard from "../../components/EventCard";
 import { cardsData } from "@/constants/data";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Events() {
+  const [isMdScreen, setIsMdScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMdScreen(window.innerWidth >= 768);
+    };
+    
+    handleResize(); // Set initial state
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="w-full bg-black min-h-screen md:mb-35 mb-15 md:mt-25 mt-20">
       <div className="w-full flex justify-center items-center">
@@ -20,9 +33,7 @@ export default function Events() {
             <motion.div
               key={event.id}
               className="flex justify-center items-center w-full max-w-[420px] min-w-[280px] mx-auto"
-              
-              // Continuous Glowing Animation only on md and larger screens
-              animate={window.innerWidth >= 768 ? {
+              animate={isMdScreen ? {
                 scale: [1, 1.02, 1], 
                 filter: [
                   "brightness(100%)",
@@ -30,14 +41,12 @@ export default function Events() {
                   "brightness(100%)",
                 ],
               } : {}}
-              transition={window.innerWidth >= 768 ? {
+              transition={isMdScreen ? {
                 duration: 3,
                 repeat: Infinity,
                 repeatType: "reverse",
                 ease: "easeInOut",
               } : {}}
-              
-              // Hover Effects (Retained for all screens)
               whileHover={{
                 scale: 1.08,
                 filter: "brightness(130%)",

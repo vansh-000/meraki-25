@@ -343,7 +343,7 @@ export const cardsData = [
     id: "18",
     name: "UCPC",
     overview:
-      "Una Competitive Programming Contest is a team-based competitive programming contest where teams solve algorithmic challenges on a local judge system, with rankings determined by problem-solving speed and accuracy.",
+      "A team-based competitive programming contest where teams solve algorithmic challenge,s with rankings determined by problem-solving speed & accuracy.",
     image: "/events/event18.png",
     date: "4th April 2025",
     time: "9:30 pm onwards",

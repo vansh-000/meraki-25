@@ -90,8 +90,11 @@ export const ContactForm = () => {
       >
         {isLoading ? "SENDING..." : isSent ? "SENT!" : "SEND"}
       </button>
-      <div className="text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide mt-6 sm:mt-8">
-        Reach out at: meraki@iiitu.ac.in
+      <div className="text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide mt-4 sm:mt-6">
+        Reach out at: <a href="mailto:meraki@iiitu.ac.in" className="underline">meraki@iiitu.ac.in</a>
+      </div>
+      <div className="text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide mt-2 md:mt-0">
+        How to reach: <a href="https://iiitu.ac.in/howtoreach" className="underline" target="_blank" rel="noopener noreferrer">IIIT Una</a>
       </div>
     </form>
   );

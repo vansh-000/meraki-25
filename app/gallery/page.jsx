@@ -60,7 +60,7 @@ export default function Gallery() {
 
     return (
         <div className="py-20 p-4">
-            <h2 className="text-5xl inline-flex w-full items-center justify-center font-bold mb-4">Image Gallery</h2>
+            <h2 className="text-5xl inline-flex w-full items-center justify-center font-bold mb-4">Meraki Rewind</h2>
             <div className="columns-2 md:columns-3 gap-4 space-y-4">
                 {images.map((src, index) => (
                     <motion.img

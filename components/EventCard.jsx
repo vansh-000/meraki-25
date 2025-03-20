@@ -16,7 +16,7 @@ const EventCard = ({
   const routeName = name.split(" ").join("-");
   console.log(routeName);
   return (
-    <div className=" h-[260px] w-[230px] sm:h-[310px] sm:w-[300px]  md:h-[340px] md:w-[330px] lg:h-[340px] lg:w-[330px] xl:h-[440px] xl:w-[430px] relative  flex flex-col justify-end " onClick={() => router.push(`/events/${routeName}`)}>
+    <div className="cursor-pointer h-[260px] w-[230px] sm:h-[310px] sm:w-[300px]  md:h-[340px] md:w-[330px] lg:h-[340px] lg:w-[330px] xl:h-[440px] xl:w-[430px] relative  flex flex-col justify-end " onClick={() => router.push(`/events/${routeName}`)}>
       <Image
         src={image}
         fill

@@ -411,7 +411,7 @@ export const TeamData = [
   },
   {
     name: "Pranav Shrivastava",
-    img: "/Team/pranav-shri.jpeg",
+    img: "/Team/pranav-shrii.jpeg",
     club: "EIC",
     team: "Devteam",
     Linkedin : "https://in.linkedin.com/in/pranav-shrivastava-293944295/",

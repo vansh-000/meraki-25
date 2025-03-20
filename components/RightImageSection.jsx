@@ -1,3 +1,44 @@
+// "use client";
+// import React from "react";
+// import { motion, AnimatePresence } from "framer-motion";
+// import { Button } from "@/components/ui/button";
+// import Link from "next/link";
+
+// export default function RightImageSection({ data, currentIndex }) {
+//   return (
+//     <div className="w-full flex flex-col items-center justify-center opacity-90 px-4 sm:px-8">
+//       <AnimatePresence mode="wait">
+//         <motion.div
+//           key={currentIndex}
+//           initial={{ y: 50, opacity: 0 }} // Enter from bottom
+//           animate={{ y: 0, opacity: 1 }} // Centered
+//           exit={{ y: -50, opacity: 0 }} // Exit to top
+//           transition={{ duration: 0.8, ease: "easeInOut" }}
+//           className="flex flex-col justify-center items-center gap-y-4 sm:gap-y-6 md:gap-y-8 min-h-[40vh] sm:min-h-[50vh] md:min-h-[60vh] w-full max-w-lg rounded-xl p-4 sm:p-6"
+//         >
+//           {/* Name Section */}
+//           <motion.div className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl tracking-wide font-light text-center">
+//             {data[currentIndex].name}
+//           </motion.div>
+
+//           {/* Club & Team Buttons */}
+//           <div className="flex flex-wrap justify-center gap-3 sm:gap-5">
+//             <Link href="#">
+//               <Button className="bg-white text-black px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-lg font-semibold shadow-md transition-transform hover:scale-105">
+//                 {data[currentIndex].club}
+//               </Button>
+//             </Link>
+//             <Button className="bg-white text-black px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-lg font-semibold shadow-md transition-transform hover:scale-105">
+//               {data[currentIndex].team}
+//             </Button>
+//           </div>
+//         </motion.div>
+//       </AnimatePresence>
+//     </div>
+//   );
+// }
+
+
 "use client";
 import { Button } from "@/components/ui/button";
 import { TeamData } from "@/constants/data";
@@ -15,9 +56,9 @@ export default function RightImageSection({ data, currentIndex, setCurrentIndex 
         className="flex flex-col justify-center items-center gap-y-4 sm:gap-y-6 min-h-screen w-full h-auto md:h-[700px] bg-transparent rounded-xl p-4 sm:p-6"
       >
         {/* Name Section */}
-        
+
         <motion.div
-          className="text-white  text-3xl md:text-5xl lg:text-6xl tracking-wide drop-shadow-lg font-extralight text-center mt-20"
+          className="text-white  text-3xl md:text-5xl lg:text-6xl tracking-wide drop-shadow-lg font-extralight text-center mt-20 lg:-mt-14"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.2, ease: "circIn" }}
@@ -36,31 +77,12 @@ export default function RightImageSection({ data, currentIndex, setCurrentIndex 
             {data.team}
           </Button>
         </div>
-      
+
         {/* Navigation Section */}
-        <div className="text-sm sm:text-lg md:text-2xl text-gray-300 tracking-wider font-semibold mt-6 sm:mt-10 -mb-4 md:-mb-4 lg:mt-36">
-          Navigate
-        </div>
+        
 
         {/* Prev & Next Buttons */}
-        <div className="flex justify-between gap-3 mt-4">
-          <Button
-            variant="ghost"
-            className="text-white lg:text-xl text-xs sm:text-base hover:bg-white/10"
-            onClick={() => setCurrentIndex((prev) => Math.max(prev - 1, 0))}
-            disabled={currentIndex === 0}
-          >
-            Prev
-          </Button>
-          <Button
-            variant="ghost"
-            className="text-white lg:text-xl text-xs sm:text-base hover:bg-white/10"
-            onClick={() => setCurrentIndex((prev) => Math.min(prev + 1, 7))}
-            disabled={currentIndex === data.length - 1}
-          >
-            Next
-          </Button>
-        </div>
+       
       </motion.div>
     </div>
   );

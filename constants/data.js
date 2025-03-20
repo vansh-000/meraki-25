@@ -415,13 +415,13 @@ export const TeamData = [
     name: "Gurpreet Kaur",
     img: "/Team/gurpreetKaur.jpeg",
     club: "Faculty",
-    team: "Co-oridnator",
+    team: "Coordinator",
   },
   {
     name: "Nishtha Hooda",
     img: "/Team/nishthaHooda.jpeg",
     club: "Faculty",
-    team: "Co-oridnator",
+    team: "Coordinator",
   },
   {
     name: "Prakhar Jaiswal",
@@ -449,9 +449,56 @@ export const TeamData = [
   },
   {
     name: "Srishti Sethi",
-    img: "/Team/shristi.jpeg",
+    img: "/Team/srishti.jpeg",
     club: "Force",
     team: "Devteam",
   },
   { name: "Aditya Goyal", img: "/Team/aditya.jpeg", club: "Force", team: "Devteam" },
 ];
+
+
+// export const TeamData = [
+//   {
+//     name: "Gurpreet Kaur",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Faculty",
+//     team: "Coordinator",
+//   },
+//   {
+//     name: "Nishtha Hooda",
+//     img: "/Team/nishthaHooda.jpeg",
+//     club: "Faculty",
+//     team: "Coordinator",
+//   },
+//   {
+//     name: "Prakhar Jaiswal",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Aavesh",
+//     team: "President",
+//   },
+//   {
+//     name: "Vansh Verma",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Force",
+//     team: "Devteam",
+//   },
+//   {
+//     name: "Pranav Shrivastava",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "EIC",
+//     team: "Devteam",
+//   },
+//   {
+//     name: "Pranav Garg",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Aavesh",
+//     team: "Devteam",
+//   },
+//   {
+//     name: "Srishti Sethi",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Force",
+//     team: "Devteam",
+//   },
+//   { name: "Aditya Goyal", img: "/Team/vansh-verma.jpeg", club: "Force", team: "Devteam" },
+// ];

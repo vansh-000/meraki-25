@@ -1,9 +1,11 @@
 export default function HomeSponsors() {
   return (
     <div
-      className="relative flex items-center justify-center h-screen overflow-hidden bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-8 md:px-16 lg:px-24 md:bg-contain"
+      className="relative flex items-center justify-center h-screen overflow-hidden bg-cover bg-center bg-no-repeat py-12 px-4 sm:px-8 md:px-16 lg:px-24 md:bg-contain w-full"
       style={{
         backgroundImage: "url('/images/backgrounds/sponsors_left.jpeg')",
+        backgroundSize: "100% 100%", 
+        backgroundPosition: "center",
       }}
     >
       <div className="absolute inset-0 bg-black opacity-60"></div>

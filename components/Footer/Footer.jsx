@@ -7,7 +7,7 @@ import linkedIn from '@/public/logos/linkedIn.png';
 const Footer = () => {
   return (
     <>
-      <div className="relative z-[200] mt-[-97px] hidden md:block w-full">
+      <div className="relative z-[200] mt-[-97px] hidden text-white md:block w-full">
         <div
           className={`bg-black w-full h-24 flex flex-col md:flex-row justify-between px-6 ${iceland.className}`}
           style={{

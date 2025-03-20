@@ -174,7 +174,7 @@ export const cardsData = [
     name: "Hack-The-Flag",
     overview:
       "A competitive Capture The Flag event testing cybersecurity skills with challenges in cryptography, reverse engineering, web exploitation, and forensics.",
-    image: "/images/backgrounds/event.png",
+    image: "/events/event3.png",
     date: "3rd April 2025",
     time: "1:45 pm - 5:30 pm",
     regDate: "30th March 2025",

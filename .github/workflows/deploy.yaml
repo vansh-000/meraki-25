@@ -22,8 +22,8 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    # - name: Build Project
-    #   run: npm run build
+    - name: Build Project
+      run: npm run build
 
   deploy:
     runs-on: ubuntu-latest
@@ -37,10 +37,10 @@ jobs:
         username: ${{ secrets.VPS_USER }}
         key: ${{ secrets.VPS_SSH_KEY }}
         script: |
-          cd /var/www/iiitu-website
+          cd /var/www/meraki-25
           git pull origin main
-          # npm install
-          # npm run build
-          pm2 restart all
-          # pm2 save
-# 
+          npm install
+          npm run build
+          pm2 restart meraki
+          pm2 save
+          sudo systemctl restart nginx

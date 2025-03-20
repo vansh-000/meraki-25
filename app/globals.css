@@ -72,3 +72,19 @@ body {
     height: 200px;
   }
 }
+
+@keyframes float-glow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float-glow {
+  animation: float-glow 3s ease-in-out infinite;
+}

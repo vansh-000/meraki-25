@@ -21,7 +21,7 @@ const EventCard = ({
         src={image}
         fill
         alt="eventImage"
-        className="absolute top-0 left-0 w-full h-full rounded-2xl z-0"
+        className="absolute top-0 left-0 w-full h-full rounded-4xl z-0"
       />
       <div className="z-10 absolute top-1/2 left-3 md:left-3 xl:left-4">
         <div className="absolute inset-0 w-14 h-14 md:w-20 md:h-20 xl:w-24 xl:h-24 bg-[#000000c3] rounded-full -z-10"></div>

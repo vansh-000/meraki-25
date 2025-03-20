@@ -49,10 +49,10 @@ const EventPage = ({ data }) => {
                   {data.overview}
                 </p>
                 <Link
-                  className="text-purple-300 hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer"
+                  className="text-purple-300 underline hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer"
                   href={`${data.unstopLink}`}
                 >
-                  REGISTER HERE
+                  REGISTRATION LINK
                 </Link>
               </div>
 
@@ -99,15 +99,15 @@ const EventPage = ({ data }) => {
                           x="20"
                           y="120"
                           fill="white"
-                          fontSize="15"
+                          fontSize="14"
+                          fontWeight="bold"
                           fontFamily="monospace"
                         >
-                          Mystery
+                          Threat-Level:
                         </text>
 
                         <text x="20" y="140" fill="red" fontSize="15" fontFamily="monospace" fontWeight="bold">
-                          <tspan x="20" y="140">Threat:</tspan>
-                          <tspan x="20" y="155">{data.difficulty}</tspan>
+                          <tspan x="20" y="140">{data.difficulty}</tspan>
                         </text>
                       </svg>
                     </div>

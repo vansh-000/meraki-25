@@ -9,7 +9,7 @@ const EventPage = ({ data }) => {
   return (
     <>
       <div
-        className="min-h-screen w-full bg-black flex items-center justify-center p-4 relative overflow-hidden "
+        className="min-h-screen w-full bg-black flex items-center justify-center p-4 relative overflow-hidden"
         style={{
           backgroundImage: "url('/images/backgrounds/event.jpeg')",
           backgroundSize: "cover",
@@ -22,14 +22,18 @@ const EventPage = ({ data }) => {
 
         <div className="w-full max-w-6xl z-10 py-6 px-4 mt-12 ">
           <div className="w-full text-left mb-6">
-            <h1 className="text-3xl inline-flex justify-center items-center w-full sm:text-4xl font-bold text-white tracking-wider font-mono">
-              {data.name}
-            </h1>
+            <h2 className="text-5xl inline-flex w-full items-center justify-center font-bold mb-4">{data.name}</h2>
           </div>
 
           <div className="w-full flex flex-col sm:flex-row lg:gap-20 lg:mb-20 gap-4">
-            {/* Left Card with Image */}
-            <div className="w-full sm:w-1/2 rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 relative overflow-hidden flex flex-col items-center">
+            {/* Left Card with Image - Tilted right */}
+            <div
+              className="w-full sm:w-1/2 rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 relative overflow-hidden flex flex-col items-center transition-transform duration-500 hover:scale-105 hover:rotate-y-[15deg] animate-float-glow"
+              style={{
+                transform: "rotateY(10deg)",
+                transformOrigin: "right center"
+              }}
+            >
               <div className="w-full flex justify-center">
                 <img
                   src={`${data.image}`}
@@ -38,10 +42,17 @@ const EventPage = ({ data }) => {
                 />
               </div>
             </div>
-            {/* Right Section */}
-            <div className="w-full sm:w-1/2 flex flex-col justify-around gap-3">
+
+            {/* Right Section - Tilted left */}
+            <div
+              className="w-full sm:w-1/2 flex flex-col justify-around gap-3 transition-transform duration-500 hover:scale-105 hover:rotate-y-[-15deg] animate-float-glow"
+              style={{
+                transform: "rotateY(-10deg)",
+                transformOrigin: "left center"
+              }}
+            >
               {/* Description Card */}
-              <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30">
+              <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 hover:border-cyan-300 hover:shadow-cyan-300/50 transition-all duration-300">
                 <h2 className="font-mono text-white uppercase border-b border-white/70 pb-2 mb-3 text-xl text-right">
                   DESCRIPTION
                 </h2>
@@ -49,21 +60,21 @@ const EventPage = ({ data }) => {
                   {data.overview}
                 </p>
                 <Link
-                  className="text-purple-300 hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer"
+                  className="text-purple-300 underline hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer"
                   href={`${data.unstopLink}`}
                 >
-                  REGISTER HERE
+                  REGISTRATION LINK
                 </Link>
               </div>
 
               {/* Threat Level & Prize Pool */}
-              <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30">
+              <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 hover:border-cyan-300 hover:shadow-cyan-300/50 transition-all duration-300">
                 <h2 className="text-lg font-mono text-white uppercase border-b border-white/70 pb-2 text-center lg:text-xl">
                   THREAT LEVEL &amp; PRIZE POOL
                 </h2>
 
                 <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
-                  <div className="w-full max-w-[180px] ">
+                  <div className="w-full max-w-[180px]">
                     <div className="relative w-full aspect-square bg-transparent flex items-center justify-center">
                       <svg
                         id="52:21"
@@ -99,15 +110,15 @@ const EventPage = ({ data }) => {
                           x="20"
                           y="120"
                           fill="white"
-                          fontSize="15"
+                          fontSize="14"
+                          fontWeight="bold"
                           fontFamily="monospace"
                         >
-                          Mystery
+                          Threat-Level:
                         </text>
 
                         <text x="20" y="140" fill="red" fontSize="15" fontFamily="monospace" fontWeight="bold">
-                          <tspan x="20" y="140">Threat:</tspan>
-                          <tspan x="20" y="155">{data.difficulty}</tspan>
+                          <tspan x="20" y="140">{data.difficulty}</tspan>
                         </text>
                       </svg>
                     </div>

@@ -75,7 +75,6 @@ yarn lint
 
 # Formats files.
 yarn format
-
 ```
 
 ## Acknowledgements

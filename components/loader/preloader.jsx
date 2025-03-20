@@ -1,45 +1,24 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SvgLogo from "@/public/images/Vectors/logo.svg"; // Ensure the path is correct
 
-const preloaderSound = "@/public/Sound/theme.mp3"; // Use direct path instead of import
-
 const Preloader = ({ onFinish }) => {
   const [isAnimating, setIsAnimating] = useState(true);
-  const audioRef = useRef(null);
-  const [isAudioPlayed, setIsAudioPlayed] = useState(false);
 
   useEffect(() => {
-    const playAudio = () => {
-      if (audioRef.current && !isAudioPlayed) {
-        audioRef.current.volume = 1;
-        audioRef.current.play().catch((err) => console.log("Audio Play Error:", err));
-        setIsAudioPlayed(true);
-      }
-    };
-
-    document.addEventListener("click", playAudio, { once: true });
-    document.addEventListener("touchstart", playAudio, { once: true });
-    
     const timer = setTimeout(() => {
       setIsAnimating(false);
       if (onFinish) {
         onFinish();
       }
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      }
-    }, 4500);
+    }, 1500);
 
     return () => {
-      document.removeEventListener("click", playAudio);
-      document.removeEventListener("touchstart", playAudio);
       clearTimeout(timer);
     };
-  }, [onFinish, isAudioPlayed]);
+  }, [onFinish]);
 
   return isAnimating ? (
     <motion.div
@@ -48,9 +27,6 @@ const Preloader = ({ onFinish }) => {
       animate={{ opacity: 0 }}
       transition={{ duration: 1, ease: "easeOut", delay: 3.5 }}
     >
-      {/* Audio Element */}
-      <audio ref={audioRef} src={preloaderSound} playsInline onCanPlay={() => console.log("Audio Loaded")} />
-      
       <motion.div
         initial={{ scale: 1, opacity: 1 }}
         animate={{ scale: 0.5, opacity: 0 }}

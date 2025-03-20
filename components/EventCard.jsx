@@ -16,18 +16,20 @@ const EventCard = ({
   const routeName = name.split(" ").join("-");
   console.log(routeName);
   return (
-    <div className=" h-[260px] w-[230px] sm:h-[310px] sm:w-[300px]  md:h-[340px] md:w-[330px] lg:h-[340px] lg:w-[330px] xl:h-[440px] xl:w-[430px] relative  flex flex-col justify-end " onClick={()=> router.push(`/events/${routeName}`)}>
+    <div className="cursor-pointer h-[260px] w-[230px] sm:h-[310px] sm:w-[300px]  md:h-[340px] md:w-[330px] lg:h-[340px] lg:w-[330px] xl:h-[440px] xl:w-[430px] relative  flex flex-col justify-end " onClick={() => router.push(`/events/${routeName}`)}>
       <Image
         src={image}
         fill
         alt="eventImage"
-        className="absolute top-0 left-0 w-full h-full rounded-2xl z-0"
+        className="absolute top-0 left-0 w-full h-full rounded-4xl z-0"
       />
-      <div className="z-10 absolute top-1/2 left-3 md:left-3  xl:left-4">
+      <div className="z-10 absolute top-1/2 left-3 md:left-3 xl:left-4">
+        <div className="absolute inset-0 w-14 h-14 md:w-20 md:h-20 xl:w-24 xl:h-24 bg-[#000000c3] rounded-full -z-10"></div>
         <p
-          className={` ${iceland.className} text-2xl md:text-4xl xl:text-5xl text-[#F5DE19] `}
+          className={`${iceland.className} text-2xl md:text-4xl xl:text-5xl text-[#F5DE19] relative`}
         >{`<${EventNumber}>`}</p>
       </div>
+
       <div
         className="w-full h-1/2 bg-[#303030]  text-white  overflow-hidden rounded-2xl relative flex items-end justify-center z-10"
         style={{

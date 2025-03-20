@@ -40,12 +40,15 @@
 
 
 "use client";
+
 import { Button } from "@/components/ui/button";
 import { TeamData } from "@/constants/data";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function RightImageSection({ data, currentIndex, setCurrentIndex }) {
+  const router = useRouter();
   return (
     <div className="w-full md:w-2/5 flex flex-col items-center gap-10 md:gap-24 opacity-90">
       <motion.div
@@ -77,12 +80,25 @@ export default function RightImageSection({ data, currentIndex, setCurrentIndex 
             {data.team}
           </Button>
         </div>
-
-        {/* Navigation Section */}
-        
-
-        {/* Prev & Next Buttons */}
-       
+        {currentIndex!=1 && currentIndex!=0 && <div
+          id="socialMedia"
+          className="flex flex-row gap-2 justify-end items-end"
+        >
+          <span onClick={()=> router.push(`${data.insta}`)}>
+            <img src="/logos/insta.png" alt="" width={"45px"} height={"45px"} />
+          </span>
+          <span onClick={()=> router.push(`${data.Linkedin}`)}>
+            <img
+              src="/logos/linkedIn.png"
+              alt=""
+              width={"45px"}
+              height={"45px"}
+            />
+          </span>
+          <span onClick={()=> router.push(`${data.github}`)}>
+            <img src="/logos/github.png" alt="" width={"40px"} height={"40px"} />
+          </span>
+        </div>}
       </motion.div>
     </div>
   );

@@ -59,8 +59,8 @@ export default function Gallery() {
     };
 
     return (
-        <div className="p-4">
-            <h2 className="text-2xl font-bold mb-4">Image Gallery</h2>
+        <div className="py-20 p-4 bg-black">
+            <h2 className="text-5xl inline-flex w-full items-center justify-center font-bold mb-4">Meraki Rewind</h2>
             <div className="columns-2 md:columns-3 gap-4 space-y-4">
                 {images.map((src, index) => (
                     <motion.img
@@ -75,7 +75,6 @@ export default function Gallery() {
                 ))}
             </div>
 
-            {/* Lightbox */}
             <AnimatePresence>
                 {selectedIndex !== null && (
                     <Dialog open={true} onClose={() => setSelectedIndex(null)} className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">

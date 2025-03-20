@@ -21,10 +21,10 @@ export const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     emailjs
       .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, 
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         formData,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
@@ -85,16 +85,16 @@ export const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className="bg-white text-black rounded-3xl px-6 py-2 text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide self-end"
+        className="bg-white cursor-pointer text-black rounded-3xl px-6 py-2 text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide self-end"
         disabled={isLoading}
       >
         {isLoading ? "SENDING..." : isSent ? "SENT!" : "SEND"}
       </button>
-      <div className="text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide mt-6 sm:mt-8">
-        Reach out at: meraki@iiitu.ac.in
+      <div className="text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide mt-4 sm:mt-6">
+        Reach out at: <a href="mailto:meraki@iiitu.ac.in" className="underline">meraki@iiitu.ac.in</a>
       </div>
-      <div className="text-lg sm:text-base md:text-lg lg:text-xl tracking-wide max-w-lg">
-        Based in: IIIT Una, Saloh - 177209, Tehsil Haroli, Distt. Una, Himachal Pradesh
+      <div className="text-xl sm:text-xl md:text-2xl lg:text-3xl tracking-wide mt-2 md:mt-0">
+        How to reach: <a href="https://iiitu.ac.in/howtoreach" className="underline" target="_blank" rel="noopener noreferrer">IIIT Una</a>
       </div>
     </form>
   );

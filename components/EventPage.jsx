@@ -65,6 +65,14 @@ const EventPage = ({ data }) => {
                 >
                   REGISTRATION LINK
                 </Link>
+                <Link
+                  className="text-purple-300 underline hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer mt-2 block"
+                  href={`${data.brochureLink}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  BROCHURE LINK
+                </Link>
               </div>
 
               {/* Threat Level & Prize Pool */}

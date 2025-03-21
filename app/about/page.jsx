@@ -5,7 +5,7 @@ import { Iceland } from "next/font/google";
 const iceland = Iceland({ subsets: ["latin"], weight: "400" });
 export default function About() {
   return (
-    <div className=" text-white bg-black bg-[url('/images/backgrounds/about.jpeg')] md:bg-[url('/images/backgrounds/about1.jpeg')] min-h-[95vh] bg-cover bg-center flex ">
+    <div className=" text-white bg-black bg-[url('/images/backgrounds/about.jpeg')] md:bg-[url('/images/backgrounds/about1.jpeg')] min-h-[100vh] bg-cover bg-center flex ">
       <Card />
       <div className="hidden h-screen md:flex flex-col justify-center items-center md:flex-row  md:justify-start w-full relative ">
         <div className={`${iceland.className} inline-flex items-center backdrop-brightness-50 md:backdrop-brightness-100 z-50 h-[41vh] w-[80%] md:w-[49%] md:h-[75%] text-[1rem] sm:text-[1.2rem] md:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.4rem] tracking-wide p-5 md:p-8 text-center`}>

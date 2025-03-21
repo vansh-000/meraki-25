@@ -1,15 +1,26 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { cardsData } from "../constants/data";
 import Link from "next/link";
 
 const EventPage = ({ data }) => {
+  const [maxTags, setMaxTags] = useState(data.tag.length);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMaxTags((window.innerWidth <= 745 && window.innerWidth >=637 ) ? 2 : data.tag.length);
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [data.tag.length]);
+
   return (
     <>
       <div
-        className="min-h-screen w-full bg-black flex items-center justify-center p-4 relative overflow-hidden"
+        className="min-h-screen w-full bg-black flex items-center justify-center mb-5 sm:mb-10 md:mb-16 lg:mb-0 relative overflow-hidden"
         style={{
           backgroundImage: "url('/images/backgrounds/event.jpeg')",
           backgroundSize: "cover",
@@ -26,53 +37,46 @@ const EventPage = ({ data }) => {
           </div>
 
           <div className="w-full flex flex-col sm:flex-row lg:gap-20 lg:mb-20 gap-4">
-            {/* Left Card with Image - Tilted right */}
-            <div
-              className="w-full sm:w-1/2 rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 relative overflow-hidden flex flex-col items-center transition-transform duration-500 hover:scale-105 hover:rotate-y-[15deg] animate-float-glow"
-              style={{
-                transform: "rotateY(10deg)",
-                transformOrigin: "right center"
-              }}
-            >
-              <div className="w-full flex justify-center">
+            <div className="w-full sm:w-1/2 rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 flex flex-col items-center transition-transform duration-500 hover:scale-105">
+              <div className="w-full h-full flex items-center justify-center">
                 <img
-                  src={`${data.image}`}
+                  src={data.image}
                   alt="event display"
                   className="w-full h-auto max-h-[30rem] object-cover rounded-lg"
                 />
               </div>
             </div>
 
-            {/* Right Section - Tilted left */}
-            <div
-              className="w-full sm:w-1/2 flex flex-col justify-around gap-3 transition-transform duration-500 hover:scale-105 hover:rotate-y-[-15deg] animate-float-glow"
-              style={{
-                transform: "rotateY(-10deg)",
-                transformOrigin: "left center"
-              }}
+            <div className="w-full sm:w-1/2 flex flex-col justify-around gap-3 transition-transform duration-500 hover:scale-105"
+            style={{
+              transform: "rotateY(-10deg)",
+              transformOrigin: "left center"
+            }}
             >
               {/* Description Card */}
               <div className="rounded-lg bg-purple-900/40 backdrop-blur-sm p-4 border border-cyan-400/70 shadow-lg shadow-cyan-500/30 hover:border-cyan-300 hover:shadow-cyan-300/50 transition-all duration-300">
                 <h2 className="font-mono text-white uppercase border-b border-white/70 pb-2 mb-3 text-xl text-right">
                   DESCRIPTION
                 </h2>
-                <p className="text-sm text-gray-200 mb-3 lg:text-xl md:text-lg">
-                  {data.overview}
-                </p>
-                <Link
-                  className="text-purple-300 underline hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer"
-                  href={`${data.unstopLink}`}
-                >
-                  REGISTRATION LINK
-                </Link>
-                <Link
-                  className="text-purple-300 underline hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer mt-2 block"
-                  href={`${data.brochureLink}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  BROCHURE LINK
-                </Link>
+                <p className="text-sm text-gray-200 mb-3 lg:text-xl md:text-lg">{data.overview}</p>
+                <div className="inline-flex justify-around items-center w-full">
+                  <Link
+                    className="text-purple-300 underline hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer"
+                    href={data.unstopLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    REGISTRATION LINK
+                  </Link>
+                  <Link
+                    className="text-purple-300 underline hover:text-purple-200 transition-colors duration-300 font-mono cursor-pointer"
+                    href={data.brochureLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    BROCHURE LINK
+                  </Link>
+                </div>
               </div>
 
               {/* Threat Level & Prize Pool */}
@@ -81,15 +85,14 @@ const EventPage = ({ data }) => {
                   THREAT LEVEL &amp; PRIZE POOL
                 </h2>
 
-                <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
+                <div className="flex flex-col sm:flex-row justify-between items-center">
                   <div className="w-full max-w-[180px]">
                     <div className="relative w-full aspect-square bg-transparent flex items-center justify-center">
                       <svg
-                        id="52:21"
                         viewBox="0 0 153 201"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-full h-auto max-h-[170px] max-w-[170px]"
+                        className="w-full h-auto max-h-[160px] max-w-[160px]"
                       >
                         <path
                           d="M2 161.534V2H127.719V65.4509L151 80.5583V199L35.9241 191.144L2 161.534Z"
@@ -136,9 +139,8 @@ const EventPage = ({ data }) => {
                       <p className="text-lg">PRIZE POOL :</p>
                       <p className="text-xl font-bold">{data.prizePool}</p>
                     </div>
-
-                    <div className="flex flex-wrap gap-4 justify-center">
-                      {data.tag.map((tag, index) => (
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {data.tag.slice(0, maxTags).map((tag, index) => (
                         <div
                           className="bg-purple-400/5 backdrop-blur-sm px-2 py-1 rounded-2xl text-white font-mono border border-purple-500/30"
                           key={index}

@@ -414,7 +414,7 @@ export const cardsData = [
 
 export const TeamData = [
   {
-    name: "Gurpreet Kaur",
+    name: "Dr. Gurpreet Kaur",
     img: "/Team/gurpreetKaur.jpeg",
     club: "Faculty",
     team: "Coordinator",
@@ -423,7 +423,7 @@ export const TeamData = [
     github: "",
   },
   {
-    name: "Nishtha Hooda",
+    name: "Dr. Nishtha Hooda",
     img: "/Team/nishthaHooda.jpeg",
     club: "Faculty",
     team: "Coordinator",
@@ -434,11 +434,11 @@ export const TeamData = [
   {
     name: "Prakhar Jaiswal",
     img: "/Team/prakharsir.jpeg",
-    club: "Aavesh",
-    team: "Student Coordinator",
+    club: "Student",
+    team: "Coordinator",
     Linkedin: "",
-    insta: "",
-    github: "",
+    insta: "https://www.instagram.com/prakhar___jaiswal?igsh=aTBraDY4dGhoMTZz",
+    github: "github.com/Prakhar2102",
   },
   {
     name: "Vansh Verma",
@@ -480,7 +480,7 @@ export const TeamData = [
   {
     name: "Aditya Goyal",
     img: "/Team/aditya.jpeg",
-    club: "Force",
+    club: "EIC",
     team: "Devteam",
     Linkedin:
       "https://www.linkedin.com/in/aditya-kumar-goyal-1a631328a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",

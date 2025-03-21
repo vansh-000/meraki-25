@@ -5,7 +5,6 @@ import { Marquee } from "@/components/magicui/marquee";
 export function MarqueeDemoVertical({ names }) {
   return (
     <div className="relative w-full h-screen z-50">
-      {/* ✅ Large Screens - Vertical Marquee */}
       <div className="hidden md:flex h-full w-[50px] md:w-[65px] flex-row items-center justify-center overflow-hidden ml-2">
         <Marquee pauseOnHover vertical className="[--duration:20s] border-l border-r  border-white">
           {names.map((item, index) => (

@@ -85,7 +85,7 @@ export const cardsData = [
     tag: ["heist", "strategy", "competition"],
     difficulty: "Extreme",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/event/money-heist",
+    unstopLink: "https://unstop.com/p/money-heist-meraki-2025-indian-institute-of-information-technology-iiit-una-1436489hh",
   },
   {
     id: "3",

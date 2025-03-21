@@ -46,6 +46,7 @@ import { TeamData } from "@/constants/data";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function RightImageSection({ data, currentIndex, setCurrentIndex }) {
   const router = useRouter();
@@ -80,24 +81,42 @@ export default function RightImageSection({ data, currentIndex, setCurrentIndex 
             {data.team}
           </Button>
         </div>
-        {currentIndex!=1 && currentIndex!=0 && <div
+        {currentIndex != 1 && currentIndex != 0 && <div
           id="socialMedia"
           className="flex flex-row gap-2 justify-end items-end"
         >
-          <span onClick={()=> router.push(`${data.insta}`)}>
-            <img src="/logos/insta.png" alt="" width={"45px"} height={"45px"} />
-          </span>
-          <span onClick={()=> router.push(`${data.Linkedin}`)}>
-            <img
-              src="/logos/linkedIn.png"
-              alt=""
-              width={"45px"}
-              height={"45px"}
-            />
-          </span>
-          <span onClick={()=> router.push(`${data.github}`)}>
-            <img src="/logos/github.png" alt="" width={"40px"} height={"40px"} />
-          </span>
+          <div className="flex space-x-6 sm:space-x-8 mt-0">
+            {TeamData[currentIndex].Linkedin && (
+              <a
+                href={TeamData[currentIndex].Linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-600 transition-transform transform hover:scale-125"
+              >
+                <FaLinkedin className="text-3xl sm:text-4xl md:text-4xl" />
+              </a>
+            )}
+            {TeamData[currentIndex].insta && (
+              <a
+                href={TeamData[currentIndex].insta}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-400 hover:text-pink-600 transition-transform transform hover:scale-125"
+              >
+                <FaInstagram className="text-3xl sm:text-4xl md:text-4xl" />
+              </a>
+            )}
+            {TeamData[currentIndex].github && (
+              <a
+                href={TeamData[currentIndex].github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-transform transform hover:scale-125"
+              >
+                <FaGithub className="text-3xl sm:text-4xl md:text-4xl" />
+              </a>
+            )}
+          </div>
         </div>}
       </motion.div>
     </div>

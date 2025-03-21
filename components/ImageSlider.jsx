@@ -35,9 +35,10 @@ export default function HomeSlider() {
           src={TeamData[(currentIndex - 1 + TeamData.length) % TeamData.length].img}
           alt="Previous"
           className="hidden md:block absolute left-0 md:-left-20 lg:left-16 w-9/12 max-w-[250px] rounded-2xl opacity-50 transition-opacity duration-300"
-          initial={{ opacity: 0.2, scale: 0.8 }}
-          animate={{ opacity: 0.5, scale: 1 }}
-          exit={{ opacity: 0.2, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.8, x: 100 }}
+          animate={{ opacity: 0.9, scale: 1, x: 0 }}
+          exit={{ opacity: 0, scale: 0.8, x: 100 }}
+          transition={{ duration: 0.5, delay: 0.3 }} // Added delay
         />
 
         {/* Main Slide */}
@@ -58,9 +59,13 @@ export default function HomeSlider() {
             <h3 className="text-3xl sm:text-4xl -mt-2 font-bold text-white">
               {TeamData[currentIndex].name}
             </h3>
-            <p className="text-lg sm:text-xl md:text-2xl -mt-3 text-gray-300">
-              {TeamData[currentIndex].club} - {TeamData[currentIndex].team}
-            </p>
+            <div className="relative w-fit px-4 py-2 mx-auto">
+              <div className="absolute inset-0 bg-black/20 backdrop-blur-lg rounded-full -z-10 px-6 py-4"></div>
+              <p className="text-lg sm:text-xl md:text-2xl text-white">
+                {TeamData[currentIndex].club} - {TeamData[currentIndex].team}
+              </p>
+            </div>
+
             <div className="flex space-x-6 sm:space-x-8 mt-0">
               {TeamData[currentIndex].Linkedin && (
                 <a
@@ -95,30 +100,30 @@ export default function HomeSlider() {
             </div>
           </motion.div>
         </AnimatePresence>
-
-        {/* Right Image (Peeking) */}
         <motion.img
           key={currentIndex + 1}
           src={TeamData[(currentIndex + 1) % TeamData.length].img}
           alt="Next"
           className="hidden md:block absolute right-0 md:-right-20 lg:right-16 w-9/12 max-w-[250px] rounded-2xl opacity-50 transition-opacity duration-300"
-          initial={{ opacity: 0.2, scale: 0.8 }}
-          animate={{ opacity: 0.5, scale: 1 }}
-          exit={{ opacity: 0.2, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.8, x: 100 }}
+          animate={{ opacity: 0.9, scale: 1, x: 0 }}
+          exit={{ opacity: 0, scale: 0.8, x: 100 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         />
       </div>
       <button
         onClick={prevSlide}
-        className="absolute left-4 sm:left-8 text-white text-3xl sm:text-4xl bg-white/20 hover:bg-white/40 transition-all rounded-full p-2"
+        className="absolute left-0 sm:left-8 text-white text-5xl sm:text-6xl transition-transform transform hover:scale-125 p-4"
       >
         &#8249;
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 sm:right-8 text-white text-3xl sm:text-4xl bg-white/20 hover:bg-white/40 transition-all rounded-full p-2"
+        className="absolute right-0 sm:right-8 text-white text-5xl sm:text-6xl transition-transform transform hover:scale-125 p-4"
       >
         &#8250;
       </button>
+
     </div>
   );
 }

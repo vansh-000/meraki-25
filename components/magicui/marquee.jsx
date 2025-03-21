@@ -20,7 +20,7 @@ export function Marquee({
       >
         {/* Duplicating children for seamless transition */}
         {children.concat(children).map((child, index) => (
-          <div key={index} className="py-6 text-center">
+          <div key={index} className="py-12 text-center">
             {child}
           </div>
         ))}

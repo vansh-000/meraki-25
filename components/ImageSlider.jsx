@@ -19,9 +19,7 @@ export default function HomeSlider() {
     );
 
     const container = containerRef.current;
-    if (container) {
-      observer.observe(container);
-    }
+    if (container) observer.observe(container);
 
     return () => {
       if (container) observer.unobserve(container);
@@ -38,14 +36,13 @@ export default function HomeSlider() {
   return (
     <div
       ref={containerRef}
-      className="relative flex items-center justify-center min-h-screen px-4 py-8 sm:px-0 md:px-4 lg:px-24 md:mt-0 bg-black"
-      
+      className="relative flex items-center justify-center min-h-[85vh] sm:min-h-screen px-4 py-8 sm:px-6 md:px-10 lg:px-24 bg-black"
     >
       <Swiper
         ref={swiperRef}
         modules={[Autoplay, EffectCoverflow]}
         effect="coverflow"
-        spaceBetween={40}
+        spaceBetween={30}
         slidesPerView={1}
         centeredSlides
         loop
@@ -53,49 +50,43 @@ export default function HomeSlider() {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 250,
+          depth: 200,
           modifier: 2,
-          scale: 0.95,
+          scale: 0.9,
         }}
         breakpoints={{
           400: { slidesPerView: 1, spaceBetween: 10 },
           600: { slidesPerView: 1, spaceBetween: 15 },
           768: { slidesPerView: 1, spaceBetween: 20 },
           1024: { slidesPerView: 2, spaceBetween: 30 },
-          1280: { slidesPerView: 3, spaceBetween: 40 },
+          1280: { slidesPerView: 2, spaceBetween: 40 },
         }}
-        className="w-full max-w-7xl h-screen"
+        className="w-full max-w-4xl h-auto flex items-center justify-center"
       >
         {TeamData.map((member) => (
           <SwiperSlide key={member.name} className="flex justify-center items-center">
-            <div className="text-center flex flex-col items-center w-full sm:w-[95%] md:w-[90%] lg:w-[70%] max-w-2xl h-[90vh] sm:h-screen space-y-6 p-6 justify-center">
-              
-              {/* Bigger Profile Image */}
+            <div className="text-center flex flex-col items-center w-full sm:w-[90%] md:w-[80%] lg:w-[65%] max-w-2xl h-auto sm:h-[90vh] space-y-6 p-6 justify-center">
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-full sm:w-4/5 md:w-3/4 h-[50%] sm:h-[60%] md:h-[55%] object-cover rounded-3xl shadow-xl"
+                className="w-full aspect-square max-w-[335px] max-h-[335px] object-cover rounded-3xl shadow-xl"
               />
-
-              {/* Name & Role */}
-              <h3 className="text-4xl font-bold text-white">{member.name}</h3>
-              <p className="text-2xl text-gray-300">{member.club} - {member.team}</p>
-
-              {/* Social Links */}
-              <div className="flex space-x-8 mt-4">
+              <h3 className="text-3xl sm:text-4xl font-bold text-white">{member.name}</h3>
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-300">{member.club} - {member.team}</p>
+              <div className="flex space-x-6 sm:space-x-8 mt-4">
                 {member.Linkedin && (
                   <a href={member.Linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition-transform transform hover:scale-125">
-                    <FaLinkedin className="text-5xl" />
+                    <FaLinkedin className="text-3xl sm:text-4xl md:text-5xl" />
                   </a>
                 )}
                 {member.insta && (
                   <a href={member.insta} target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-600 transition-transform transform hover:scale-125">
-                    <FaInstagram className="text-5xl" />
+                    <FaInstagram className="text-3xl sm:text-4xl md:text-5xl" />
                   </a>
                 )}
                 {member.github && (
                   <a href={member.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-transform transform hover:scale-125">
-                    <FaGithub className="text-5xl" />
+                    <FaGithub className="text-3xl sm:text-4xl md:text-5xl" />
                   </a>
                 )}
               </div>

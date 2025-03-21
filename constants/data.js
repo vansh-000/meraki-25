@@ -1,5 +1,3 @@
-import { Linkedin } from "lucide-react";
-
 export const faqs = [
   {
     id: 1,
@@ -69,6 +67,7 @@ export const cardsData = [
     prizePool: "Trophies & Certificates",
     unstopLink:
       "https://unstop.com/p/stock-buzz-indian-institute-of-information-technology-iiit-una-1433470",
+    brochureLink: "/brochures/brochure1.pdf",
   },
   {
     id: "2",
@@ -86,6 +85,7 @@ export const cardsData = [
     difficulty: "Extreme",
     prizePool: "Trophies & Certificates",
     unstopLink: "https://unstop.com/p/money-heist-meraki-2025-indian-institute-of-information-technology-iiit-una-1436489hh",
+    brochureLink: "/brochures/brochure2.pdf",
   },
   {
     id: "3",
@@ -104,6 +104,7 @@ export const cardsData = [
     prizePool: "Trophies & Certificates",
     unstopLink:
       "https://unstop.com/p/coderation-indian-institute-of-information-technology-iiit-una-1433761",
+    brochureLink: "/brochures/brochure3.pdf",
   },
   {
     id: "4",
@@ -122,6 +123,7 @@ export const cardsData = [
     prizePool: "₹10,000 + Trophies & Goodies",
     unstopLink:
       "https://unstop.com/hackathons/progothon-indian-institute-of-information-technology-iiit-una-1433809",
+    brochureLink: "/brochures/brochure4.pdf",
   },
   {
     id: "5",
@@ -139,6 +141,7 @@ export const cardsData = [
     difficulty: "High-Octane",
     prizePool: "₹5,000 + Trophies & Goodies",
     unstopLink: "https://unstop.com/event/noscope",
+    brochureLink: "/brochures/brochure5.pdf",
   },
   {
     id: "6",
@@ -156,6 +159,7 @@ export const cardsData = [
     difficulty: "Creative",
     prizePool: "Trophies & Certificates",
     unstopLink: "https://unstop.com/event/ad-venture",
+    brochureLink: "/brochures/brochure6.pdf",
   },
   {
     id: "7",
@@ -173,7 +177,8 @@ export const cardsData = [
     difficulty: "Tech-Savvy",
     prizePool: "Trophies & Certificates",
     unstopLink:
-      "https://unstop.com/p/ard-win-o-meraki-25-indian-institute-of-information-technology-iiit-una-1432581 ",
+    "https://unstop.com/p/ard-win-o-meraki-25-indian-institute-of-information-technology-iiit-una-1432581 ",
+    brochureLink: "/brochures/brochure7.pdf",
   },
   {
     id: "8",
@@ -191,6 +196,7 @@ export const cardsData = [
     difficulty: "High-Stakes",
     prizePool: "Trophies & Certificates",
     unstopLink: "https://unstop.com/event/hack-the-flag",
+    brochureLink: "/brochures/brochure8.pdf",
   },
   {
     id: "9",
@@ -209,6 +215,7 @@ export const cardsData = [
     prizePool: "₹5,000 + Trophies & Goodies",
     unstopLink:
       "https://unstop.com/p/sold-mold-indian-institute-of-information-technology-iiit-una-1434588",
+    brochureLink: "/brochures/brochure9.pdf",
   },
   {
     id: "10",
@@ -227,6 +234,7 @@ export const cardsData = [
     prizePool: "₹5,000 + Trophies & Goodies",
     unstopLink:
       "https://unstop.com/hackathons/run-code-run-indian-institute-of-information-technology-iiit-una-1435143",
+    brochureLink: "/brochures/brochure10.pdf",
   },
   {
     id: "11",
@@ -245,6 +253,7 @@ export const cardsData = [
     prizePool: "Trophies & Certificates",
     unstopLink:
       "https://unstop.com/p/tech-debate-indian-institute-of-information-technology-iiit-una-1433760",
+    brochureLink: "/brochures/brochure11.pdf",
   },
   {
     id: "12",
@@ -262,6 +271,7 @@ export const cardsData = [
     difficulty: "Competitive",
     prizePool: "Trophies & Certificates",
     unstopLink: "https://unstop.com/event/ipl-auction",
+    brochureLink: "/brochures/brochure12.pdf",
   },
   {
     id: "13",
@@ -280,6 +290,7 @@ export const cardsData = [
     prizePool: "Trophies & Certificates",
     unstopLink:
       "https://unstop.com/competitions/mystery-ops-indian-institute-of-information-technology-iiit-una-1434611",
+    brochureLink: "/brochures/brochure13.pdf",
   },
   {
     id: "14",
@@ -297,6 +308,7 @@ export const cardsData = [
     difficulty: "Brainstorming",
     prizePool: "Trophies & Certificates",
     unstopLink: "https://unstop.com/o/wcJhAZR?lb=rpKpLz37",
+    brochureLink: "/brochures/brochure14.pdf",
   },
   {
     id: "15",
@@ -315,6 +327,7 @@ export const cardsData = [
     prizePool: "Trophies & Certificates",
     unstopLink:
       "https://unstop.com/p/hired-or-fired-indian-institute-of-information-technology-iiit-una-1434917",
+    brochureLink: "/brochures/brochure15.pdf",
   },
   {
     id: "16",
@@ -333,6 +346,7 @@ export const cardsData = [
     prizePool: "₹5,000 + Trophies & Goodies",
     unstopLink:
       "https://unstop.com/hackathons/coders-faceoff-indian-institute-of-information-technology-iiit-una-1435066",
+    brochureLink: "/brochures/brochure16.pdf",
   },
   {
     id: "17",
@@ -351,6 +365,7 @@ export const cardsData = [
     prizePool: "₹10,000 + Trophies & Goodies",
     unstopLink:
       "https://unstop.com/competitions/robo-drive-indian-institute-of-information-technology-iiit-una-1434573",
+    brochureLink: "/brochures/brochure17.pdf",
   },
   {
     id: "18",
@@ -369,9 +384,9 @@ export const cardsData = [
     prizePool: "Trophies & Certificates",
     unstopLink:
       "https://unstop.com/p/una-competitive-programming-contest-ucpc-indian-institute-of-information-technology-iiit-una-1434713",
+    brochureLink: "/brochures/brochure18.pdf",
   },
 ];
-
 export const TeamData = [
   {
     name: "Gurpreet Kaur",
@@ -447,49 +462,3 @@ export const TeamData = [
   },
 ];
 
-
-// export const TeamData = [
-//   {
-//     name: "Gurpreet Kaur",
-//     img: "/Team/vansh-verma.jpeg",
-//     club: "Faculty",
-//     team: "Coordinator",
-//   },
-//   {
-//     name: "Nishtha Hooda",
-//     img: "/Team/nishthaHooda.jpeg",
-//     club: "Faculty",
-//     team: "Coordinator",
-//   },
-//   {
-//     name: "Prakhar Jaiswal",
-//     img: "/Team/vansh-verma.jpeg",
-//     club: "Aavesh",
-//     team: "President",
-//   },
-//   {
-//     name: "Vansh Verma",
-//     img: "/Team/vansh-verma.jpeg",
-//     club: "Force",
-//     team: "Devteam",
-//   },
-//   {
-//     name: "Pranav Shrivastava",
-//     img: "/Team/vansh-verma.jpeg",
-//     club: "EIC",
-//     team: "Devteam",
-//   },
-//   {
-//     name: "Pranav Garg",
-//     img: "/Team/vansh-verma.jpeg",
-//     club: "Aavesh",
-//     team: "Devteam",
-//   },
-//   {
-//     name: "Srishti Sethi",
-//     img: "/Team/vansh-verma.jpeg",
-//     club: "Force",
-//     team: "Devteam",
-//   },
-//   { name: "Aditya Goyal", img: "/Team/vansh-verma.jpeg", club: "Force", team: "Devteam" },
-// ];

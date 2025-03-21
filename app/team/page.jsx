@@ -7,10 +7,9 @@ export default function Team() {
     return (
       <>
         <div
-          className="relative overflow-y-hidden w-screen h-[90vh] md:h-screen bg-[url('/images/backgrounds/green22.jpeg')] lg:bg-[url('/images/backgrounds/green.jpeg')]
-                md:bg-[url('/images/backgrounds/green22.jpeg')] bg-contain bg-center bg-no-repeat"
+          className="relative overflow-y-hidden w-screen h-screen bg-[url('/images/backgrounds/green22.jpeg')] sm:bg-[url('/images/backgrounds/green.jpeg')] bg-cover bg-center bg-no-repeat"
         >
-          <div className="relative z-20">
+          <div className="mt-10 sm:mt-0 md:-mt-5 relative z-20">
             <ScrollableGallery />
           </div>
         </div>

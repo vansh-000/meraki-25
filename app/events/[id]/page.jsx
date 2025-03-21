@@ -12,7 +12,7 @@ function EventIdPage() {
   console.log("arr" ,arr);
   
   return (
-    <div>
+  <>
       {arr.length > 0 ? (
         <>
           <EventPage data={arr[0]} />
@@ -20,11 +20,11 @@ function EventIdPage() {
       ) : (
         <>
           <div className="w-full h-full flex justify-center items-center">
-            ...Loading event details
+            No event found
           </div>
         </>
       )}
-    </div>
+    </>
   );
 }
 

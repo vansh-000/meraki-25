@@ -1,3 +1,5 @@
+import { Linkedin } from "lucide-react";
+
 export const faqs = [
   {
     id: 1,
@@ -65,13 +67,14 @@ export const cardsData = [
     tag: ["stock market", "trading", "simulation"],
     difficulty: "Strategic",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/p/stock-buzz-indian-institute-of-information-technology-iiit-una-1433470",
+    unstopLink:
+      "https://unstop.com/p/stock-buzz-indian-institute-of-information-technology-iiit-una-1433470",
   },
   {
     id: "2",
     name: "Money Heist",
     overview:
-      "A high-stakes challenge where teams assemble a crew, plan a bank heist, and overcome obstacles like hostage negotiations and police raids to escape with the most money.",
+      "A high stakes challenge where teams assemble a crew, plan a bank heist, and overcome obstacles like hostage negotiations and police raids to escape with the most money.",
     image: "/events/event2.png",
     date: "2nd April 2025",
     time: "5:00 pm - 7:30 pm",
@@ -99,7 +102,8 @@ export const cardsData = [
     tag: ["coding", "programming", "algorithms"],
     difficulty: "Competitive",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/p/coderation-indian-institute-of-information-technology-iiit-una-1433761",
+    unstopLink:
+      "https://unstop.com/p/coderation-indian-institute-of-information-technology-iiit-una-1433761",
   },
   {
     id: "4",
@@ -116,7 +120,8 @@ export const cardsData = [
     tag: ["hackathon", "innovation", "coding"],
     difficulty: "Intense",
     prizePool: "₹10,000 + Trophies & Goodies",
-    unstopLink: "https://unstop.com/hackathons/progothon-indian-institute-of-information-technology-iiit-una-1433809",
+    unstopLink:
+      "https://unstop.com/hackathons/progothon-indian-institute-of-information-technology-iiit-una-1433809",
   },
   {
     id: "5",
@@ -167,7 +172,8 @@ export const cardsData = [
     tag: ["electronics", "arduino", "innovation"],
     difficulty: "Tech-Savvy",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/p/ard-win-o-meraki-25-indian-institute-of-information-technology-iiit-una-1432581 ",
+    unstopLink:
+      "https://unstop.com/p/ard-win-o-meraki-25-indian-institute-of-information-technology-iiit-una-1432581 ",
   },
   {
     id: "8",
@@ -201,7 +207,8 @@ export const cardsData = [
     tag: ["soldering", "electronics", "hardware"],
     difficulty: "Technical",
     prizePool: "₹5,000 + Trophies & Goodies",
-    unstopLink: "https://unstop.com/p/sold-mold-indian-institute-of-information-technology-iiit-una-1434588",
+    unstopLink:
+      "https://unstop.com/p/sold-mold-indian-institute-of-information-technology-iiit-una-1434588",
   },
   {
     id: "10",
@@ -218,13 +225,14 @@ export const cardsData = [
     tag: ["coding", "programming", "strategy"],
     difficulty: "Extreme",
     prizePool: "₹5,000 + Trophies & Goodies",
-    unstopLink: "https://unstop.com/hackathons/run-code-run-indian-institute-of-information-technology-iiit-una-1435143",
+    unstopLink:
+      "https://unstop.com/hackathons/run-code-run-indian-institute-of-information-technology-iiit-una-1435143",
   },
   {
     id: "11",
     name: "Tech Debate",
     overview:
-      "A debate competition where teams discuss tech-related topics, presenting opening statements, counter-arguments, and concluding remarks to persuade the judges.",
+      "A debate competition where teams discuss tech related topics, presenting opening statements, counter arguments, and concluding remarks to persuade the judges.",
     image: "/events/event13.png",
     date: "4th April 2025",
     time: "10:45 am - 1:00 pm",
@@ -235,13 +243,14 @@ export const cardsData = [
     tag: ["debate", "communication", "tech"],
     difficulty: "Intense",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/p/tech-debate-indian-institute-of-information-technology-iiit-una-1433760",
+    unstopLink:
+      "https://unstop.com/p/tech-debate-indian-institute-of-information-technology-iiit-una-1433760",
   },
   {
     id: "12",
     name: "IPL Auction",
     overview:
-      "A high-stakes virtual auction event where teams bid in real time using a set budget to build the best cricket squad.",
+      "A high stakes virtual auction event where teams bid in real time using a set budget to build the best cricket squad.",
     image: "/events/event14.png",
     date: "4th April 2025",
     time: "10:45 am - 1:00 pm",
@@ -258,7 +267,7 @@ export const cardsData = [
     id: "13",
     name: "Mystery Ops",
     overview:
-      "An immersive escape-room style challenge where teams navigate through themed rooms, solving puzzles and challenges to advance and win.",
+      "An immersive escape room style challenge where teams navigate through themed rooms, solving puzzles and challenges to advance and win.",
     image: "/events/event7.png",
     date: "4th April 2025",
     time: "1:30 pm - 2:45 pm",
@@ -269,13 +278,14 @@ export const cardsData = [
     tag: ["Escape room", "Mystery", "Challenge"],
     difficulty: "Mysterious",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/competitions/mystery-ops-indian-institute-of-information-technology-iiit-una-1434611",
+    unstopLink:
+      "https://unstop.com/competitions/mystery-ops-indian-institute-of-information-technology-iiit-una-1434611",
   },
   {
     id: "14",
     name: "Scales Quest",
     overview:
-      "A two-round event combining a pen-and-paper quiz with a virtual snakes and ladders challenge, testing knowledge and strategic thinking.",
+      "A two round event combining a pen and paper quiz with a virtual snakes and ladders challenge, testing knowledge and strategic thinking.",
     image: "/events/event15.png",
     date: "4th April 2025",
     time: "3:00 pm - 5:30 pm",
@@ -292,7 +302,7 @@ export const cardsData = [
     id: "15",
     name: "Hired or Fired?",
     overview:
-      "A recruitment challenge featuring coding, aptitude, and mock interview rounds designed to test individual problem-solving and technical skills.",
+      "A recruitment challenge featuring coding, aptitude, and mock interview rounds designed to test individual problem solving and technical skills.",
     image: "/events/event16.png",
     date: "4th April 2025",
     time: "3:00 pm - 5:30 pm",
@@ -303,7 +313,8 @@ export const cardsData = [
     tag: ["recruitment", "coding", "aptitude"],
     difficulty: "Competitive",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/p/hired-or-fired-indian-institute-of-information-technology-iiit-una-1434917",
+    unstopLink:
+      "https://unstop.com/p/hired-or-fired-indian-institute-of-information-technology-iiit-una-1434917",
   },
   {
     id: "16",
@@ -320,13 +331,14 @@ export const cardsData = [
     tag: ["frontend", "coding", "design"],
     difficulty: "Challenging",
     prizePool: "₹5,000 + Trophies & Goodies",
-    unstopLink: "https://unstop.com/hackathons/coders-faceoff-indian-institute-of-information-technology-iiit-una-1435066",
+    unstopLink:
+      "https://unstop.com/hackathons/coders-faceoff-indian-institute-of-information-technology-iiit-una-1435066",
   },
   {
     id: "17",
     name: "Robo-Drive",
     overview:
-      "A thrilling robotic car race where teams design, assemble, and program high-speed robotic cars to navigate a challenging course in elimination and final rounds.",
+      "A thrilling robotic car race where teams design, assemble, and program high speed robotic cars to navigate a challenging course in elimination and final rounds.",
     image: "/events/event6.png",
     date: "4th April 2025",
     time: "6:00 pm - 8:30 pm",
@@ -337,13 +349,14 @@ export const cardsData = [
     tag: ["robotics", "racing", "innovation"],
     difficulty: "Adrenaline-Packed",
     prizePool: "₹10,000 + Trophies & Goodies",
-    unstopLink: "https://unstop.com/competitions/robo-drive-indian-institute-of-information-technology-iiit-una-1434573",
+    unstopLink:
+      "https://unstop.com/competitions/robo-drive-indian-institute-of-information-technology-iiit-una-1434573",
   },
   {
     id: "18",
     name: "UCPC",
     overview:
-      "Una Competitive Programming Contest is a team-based competitive programming contest where teams solve algorithmic challenges on a local judge system, with rankings determined by problem-solving speed and accuracy.",
+      "A team based competitive programming contest where teams solve algorithmic challenges with rankings determined by problem solving speed & accuracy.",
     image: "/events/event18.png",
     date: "4th April 2025",
     time: "9:30 pm onwards",
@@ -354,53 +367,129 @@ export const cardsData = [
     tag: ["programming", "coding", "competition"],
     difficulty: "Brain-Burning",
     prizePool: "Trophies & Certificates",
-    unstopLink: "https://unstop.com/p/una-competitive-programming-contest-ucpc-indian-institute-of-information-technology-iiit-una-1434713",
+    unstopLink:
+      "https://unstop.com/p/una-competitive-programming-contest-ucpc-indian-institute-of-information-technology-iiit-una-1434713",
   },
 ];
-
 
 export const TeamData = [
   {
     name: "Gurpreet Kaur",
     img: "/Team/gurpreetKaur.jpeg",
     club: "Faculty",
-    team: "Cooridnator",
+    team: "Coordinator",
+    Linkedin : "",
+    insta : "",
+    github : "",
   },
   {
     name: "Nishtha Hooda",
     img: "/Team/nishthaHooda.jpeg",
     club: "Faculty",
-    team: "Cooridnator",
+    team: "Coordinator",
+    Linkedin : "",
+    insta : "",
+    github : "",
   },
   {
     name: "Prakhar Jaiswal",
     img: "/Team/prakharsir.jpeg",
     club: "Aavesh",
-    team: "President",
+    team: "Student Coordinator",
+    Linkedin : "",
+    insta : "",
+    github : "",
   },
   {
     name: "Vansh Verma",
-    img: "/Team/vansh.jpg",
+    img: "/Team/vansh.jpeg",
     club: "Force",
     team: "Devteam",
+    Linkedin : "https://www.linkedin.com/in/vansh-verma-07932a27b/",
+    insta : "https://www.instagram.com/_vanshnamdev/",
+    github : "https://github.com/vansh-000",
   },
   {
     name: "Pranav Shrivastava",
-    img: "/Team/pranav-shri.jpeg",
+    img: "/Team/pranav-shrii.jpeg",
     club: "EIC",
     team: "Devteam",
+    Linkedin : "https://in.linkedin.com/in/pranav-shrivastava-293944295/",
+    insta : "https://www.instagram.com/pranav__0611/",
+    github : "https://github.com/Pranavshrivastava0611",
   },
   {
     name: "Pranav Garg",
     img: "/Team/pranav-garg.jpeg",
     club: "Aavesh",
     team: "Devteam",
+    Linkedin : "https://www.linkedin.com/in/pranav-garg-4729ab277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    insta : "https://www.instagram.com/pranav.garg?igsh=dTJpNGs0dHJvbmRt",
+    github : "https://github.com/Pranav140",
   },
   {
     name: "Srishti Sethi",
-    img: "/Team/shristi.jpeg",
+    img: "/Team/srishti.jpeg",
     club: "Force",
     team: "Devteam",
+    Linkedin : "",
+    insta : "",
+    github : "",
   },
-  { name: "Aditya Goyal", img: "/Team/aditya.jpeg", club: "Force", team: "Devteam" },
+  {
+    name: "Aditya Goyal",
+    img: "/Team/aditya.jpeg",
+    club: "Force",
+    team: "Devteam",
+    Linkedin : "https://www.linkedin.com/in/aditya-kumar-goyal-1a631328a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    insta : "https://www.instagram.com/aditya_10_09_05/",
+    github : "https://github.com/Aditya100905",
+  },
 ];
+
+
+// export const TeamData = [
+//   {
+//     name: "Gurpreet Kaur",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Faculty",
+//     team: "Coordinator",
+//   },
+//   {
+//     name: "Nishtha Hooda",
+//     img: "/Team/nishthaHooda.jpeg",
+//     club: "Faculty",
+//     team: "Coordinator",
+//   },
+//   {
+//     name: "Prakhar Jaiswal",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Aavesh",
+//     team: "President",
+//   },
+//   {
+//     name: "Vansh Verma",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Force",
+//     team: "Devteam",
+//   },
+//   {
+//     name: "Pranav Shrivastava",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "EIC",
+//     team: "Devteam",
+//   },
+//   {
+//     name: "Pranav Garg",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Aavesh",
+//     team: "Devteam",
+//   },
+//   {
+//     name: "Srishti Sethi",
+//     img: "/Team/vansh-verma.jpeg",
+//     club: "Force",
+//     team: "Devteam",
+//   },
+//   { name: "Aditya Goyal", img: "/Team/vansh-verma.jpeg", club: "Force", team: "Devteam" },
+// ];

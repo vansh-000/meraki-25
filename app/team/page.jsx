@@ -1,6 +1,7 @@
 import ScrollableGallery from "../../components/ScrollableGallery";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import HomeSlider from "@/components/ImageSlider";
 
 export default function Team() {
     return (

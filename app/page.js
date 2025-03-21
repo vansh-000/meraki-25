@@ -102,7 +102,7 @@ export default function Home() {
           </section>
           <section className="h-screen overflow-y-hidden snap-start">
             <HomeContact />
-            <div className="relative bottom-[80px] md:bottom-0 w-full">
+            <div className="relative md:bottom-0 w-full">
               <Footer />
             </div>
           </section>

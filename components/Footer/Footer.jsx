@@ -7,7 +7,7 @@ import linkedIn from '@/public/logos/linkedIn.png';
 const Footer = () => {
   return (
     <>
-      <div className="relative z-[200] mt-[-97px] hidden text-white md:block w-full">
+      <div className="relative z-[200] -mt-24 hidden text-white md:block w-full">
         <div
           className={`bg-black w-full h-24 flex flex-col md:flex-row justify-between px-6 ${iceland.className}`}
           style={{
@@ -35,8 +35,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={`md:hidden flex relative mt-[-40px] bottom-0 ${iceland.className} left-0 right-0 bg-black w-full h-20 flex flex-row justify-around items-center px-6 py-2 z-50`}>
-      
+      <div className={`md:hidden flex relative -mt-20 bottom-0 ${iceland.className} left-0 right-0 bg-black w-full h-20 flex flex-row justify-around items-center px-6 py-2 z-50`}>
           <a href="https://www.instagram.com/meraki_iiitu/">
             <Image src={insta} alt="Follow us on Instagram" className="w-6 h-6" />
           </a>

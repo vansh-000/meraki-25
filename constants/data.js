@@ -366,7 +366,7 @@ export const cardsData = [
     prizePool: "₹10,000 + Trophies & Goodies",
     unstopLink:
       "https://unstop.com/competitions/robo-drive-indian-institute-of-information-technology-iiit-una-1434573",
-    brochureLink: "/brochures/brochure.pdf",
+    brochureLink: "/brochures/brochure17.pdf",
   },
   {
     id: "18",

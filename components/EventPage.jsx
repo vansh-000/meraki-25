@@ -20,7 +20,7 @@ const EventPage = ({ data }) => {
   return (
     <>
       <div
-        className="min-h-screen w-full bg-black flex items-center justify-center mb-5 sm:mb-10 md:mb-16 lg:mb-0 relative overflow-hidden"
+        className="min-h-screen w-full bg-black flex items-center justify-center mb-20 sm:mb-12 md:mb-20 lg:mb-0 relative overflow-hidden"
         style={{
           backgroundImage: "url('/images/backgrounds/event.jpeg')",
           backgroundSize: "cover",
